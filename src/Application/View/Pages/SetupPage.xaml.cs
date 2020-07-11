@@ -11,7 +11,12 @@ namespace Application.View.Pages
 
         private void OpenDefaultAppsSettings(object sender, System.Windows.RoutedEventArgs e)
         {
-            Process.Start("ms-settings:defaultapps");
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = "ms-settings:defaultapps",
+                UseShellExecute = true
+            };
+            Process.Start(processStartInfo);
         }
     }
 }

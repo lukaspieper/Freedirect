@@ -42,7 +42,12 @@ namespace Logic.Protocol
 
         public void Start()
         {
-            Process.Start(Url);
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = Url,
+                UseShellExecute = true
+            };
+            Process.Start(processStartInfo);
         }
     }
 }
