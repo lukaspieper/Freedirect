@@ -17,7 +17,7 @@ using static Nuke.Common.Tools.MSBuild.MSBuildTasks;
     GitHubActionsImage.WindowsLatest,
     On = new[] { GitHubActionsTrigger.Push },
     InvokedTargets = new[] { nameof(Compile) })]
-class Build : NukeBuild
+partial class Build : NukeBuild
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -25,22 +25,23 @@ class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
-    public static int Main() => Execute<Build>(x => x.Compile);
+    public static int Main() => Execute<Build>(x => x.CompileAndAnalyze);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
 
     [Solution] readonly Solution Solution;
 
+    AbsolutePath BuildDirectory => RootDirectory / "build";
     AbsolutePath SourceDirectory => RootDirectory / "src";
-    AbsolutePath OutputDirectory => RootDirectory / "output";
+    AbsolutePath ArtifactsDirectory => RootDirectory / "artifacts";
 
     Target Clean => _ => _
         .Before(Restore)
         .Executes(() =>
         {
             SourceDirectory.GlobDirectories("**/bin", "**/obj", "**/AppPackages").ForEach(DeleteDirectory);
-            EnsureCleanDirectory(OutputDirectory);
+            EnsureCleanDirectory(ArtifactsDirectory);
         });
 
     Target Restore => _ => _
@@ -59,4 +60,20 @@ class Build : NukeBuild
                 .SetTargetPath(Solution)
                 .SetConfiguration(Configuration));
         });
+
+    Target CopyAssetsToArtifacts => _ => _
+        .After(Clean)
+        .Executes(() =>
+        {
+            EnsureExistingDirectory(ArtifactsDirectory);
+
+            CopyDirectoryRecursively(BuildDirectory / "Assets",
+                ArtifactsDirectory / "Assets",
+                DirectoryExistsPolicy.Merge,
+                FileExistsPolicy.OverwriteIfNewer);
+        });
+
+    Target CompileAndAnalyze => _ => _
+        .DependsOn(Compile)
+        .DependsOn(CalculateMetrics);
 }
