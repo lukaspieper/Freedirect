@@ -13,7 +13,7 @@ partial class Build
     AbsolutePath CodeMetricsArtifactsDirectory => ArtifactsDirectory / "Analysis" / "CodeMetrics";
 
     Target CalculateMetrics => _ => _
-        .DependsOn(CopyAssets)
+        .DependsOn(CopyAssetsToArtifacts)
         .After(Compile)
         .Executes(() =>
         {
