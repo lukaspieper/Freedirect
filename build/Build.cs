@@ -16,7 +16,7 @@ using static Nuke.Common.Tools.MSBuild.MSBuildTasks;
     "continuous",
     GitHubActionsImage.WindowsLatest,
     On = new[] { GitHubActionsTrigger.Push },
-    InvokedTargets = new[] { nameof(Compile) })]
+    InvokedTargets = new[] { nameof(CompileAndAnalyze) })]
 partial class Build : NukeBuild
 {
     /// Support plugins are available for:
