@@ -3,6 +3,8 @@
 	<xsl:output method="html" version="5" doctype-system="" encoding="utf-8" />
 	<xsl:strip-space elements="*" />
 
+	<xsl:param name="maintainability_index_minimum" />
+
 	<xsl:template match="/">
 		<html>
 			<head>
@@ -49,7 +51,7 @@
 	</xsl:template>
 
 	<xsl:template match="Target">
-		<tr style="background-color: #63D85F;">
+		<tr style="background-color: #89B0FF;">
 			<td>
 				<img src="../../Assets/CSProjectNode.png" alt="proj"/>
 			</td>
@@ -135,9 +137,19 @@
 	</xsl:template>
 
 	<xsl:template match="Metrics">
-		<td>
-			<xsl:value-of select="Metric[@Name='MaintainabilityIndex']/@Value" />
-		</td>
+		<xsl:choose>
+			<xsl:when test="Metric[@Name='MaintainabilityIndex']/@Value &lt; $maintainability_index_minimum">
+				<td bgcolor="#FF221E">
+					<xsl:value-of select="Metric[@Name='MaintainabilityIndex']/@Value" />
+				</td>
+			</xsl:when>
+			<xsl:otherwise>
+				<td>
+					<xsl:value-of select="Metric[@Name='MaintainabilityIndex']/@Value" />
+				</td>
+			</xsl:otherwise>
+		</xsl:choose>
+
 		<td>
 			<xsl:value-of select="Metric[@Name='CyclomaticComplexity']/@Value" />
 		</td>

@@ -1,39 +1,51 @@
-﻿using System.Xml.Xsl;
+﻿using System.IO;
+using System.Xml.Xsl;
 using Nuke.Common;
 using Nuke.Common.IO;
 using Nuke.Common.Tooling;
-using static Nuke.Common.Logger;
 using static Nuke.Common.IO.FileSystemTasks;
+using static Utilities.XmlTransformation;
 
 partial class Build
 {
     [PackageExecutable(packageId: "Microsoft.CodeAnalysis.Metrics", packageExecutable: "Metrics.exe")]
     readonly Tool Metrics;
 
+    AbsolutePath CodeMetricsTransformXsltFile => BuildDirectory / "CodeMetrics" / "TransformCodeMetricsResults.xslt";
     AbsolutePath CodeMetricsArtifactsDirectory => ArtifactsDirectory / "Analysis" / "CodeMetrics";
+    AbsolutePath CodeMetricsXmlResultsFile => CodeMetricsArtifactsDirectory / "CodeMetrics.xml";
+    AbsolutePath CodeMetricsHtmlReportFile => CodeMetricsArtifactsDirectory / "CodeMetrics.html";
 
     Target CalculateMetrics => _ => _
         .DependsOn(CopyAssetsToArtifacts)
         .After(Compile)
+        .ProceedAfterFailure()
         .Executes(() =>
         {
             // Cleaning this specific directory allows running this target on its own without deleting other results.
             EnsureCleanDirectory(CodeMetricsArtifactsDirectory);
 
-            var metricsOutputPath = CodeMetricsArtifactsDirectory / "Results.xml";
-            Metrics($"/SOLUTION:\"{Solution}\" /OUT:\"{metricsOutputPath}\"");
+            Metrics($"/SOLUTION:\"{Solution}\" /OUT:\"{CodeMetricsXmlResultsFile}\"");
 
-            TransformMetricsResults(metricsOutputPath);
+            TransformMetricsResults();
+            FailTargetOnTooLowMaintainability();
         });
 
-    void TransformMetricsResults(string metricsOutputPath)
+    void TransformMetricsResults()
     {
-        Normal("Transforming CodeMetrics results...");
+        var arguments = new XsltArgumentList();
+        arguments.AddParam("maintainability_index_minimum", "", MaintainabilityIndexMinimum);
 
-        var transformation = new XslCompiledTransform();
-        transformation.Load(BuildDirectory / "CodeMetrics" / "TransformCodeMetricsResults.xslt");
-        transformation.Transform(metricsOutputPath, CodeMetricsArtifactsDirectory / "CodeMetrics.html");
+        TransformXml(CodeMetricsXmlResultsFile, CodeMetricsTransformXsltFile, CodeMetricsHtmlReportFile, arguments);
+    }
 
-        Normal("Transformation completed.");
+    void FailTargetOnTooLowMaintainability()
+    {
+        var html = File.ReadAllText(CodeMetricsHtmlReportFile);
+
+        if (html.Contains("bgcolor=\"#FF221E\""))
+        {
+            ControlFlow.Fail($"CodeMetrics analysis found member with MaintainabilityIndex less than required value of '{MaintainabilityIndexMinimum}'.");
+        }
     }
 }
