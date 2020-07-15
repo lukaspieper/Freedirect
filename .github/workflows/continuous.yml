@@ -27,6 +27,7 @@ jobs:
       - name: Run './build.cmd CompileAndAnalyze'
         run: ./build.cmd CompileAndAnalyze
       - uses: actions/upload-artifact@v1
+        if: ${{ always() }}
         with:
           name: artifacts
           path: artifacts
