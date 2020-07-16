@@ -54,7 +54,7 @@ partial class Build : NukeBuild
         .DependsOn(Restore)
         .Executes(() =>
         {
-            MSBuild(s => s
+            MsBuildOutput = MSBuild(s => s
                 .SetTargetPath(Solution)
                 .SetConfiguration(Configuration));
         });
@@ -74,5 +74,6 @@ partial class Build : NukeBuild
     Target CompileAndAnalyze => _ => _
         .Produces(ArtifactsDirectory)
         .DependsOn(Compile)
+        .DependsOn(GetRoslynAnalyzersResults)
         .DependsOn(CalculateMetrics);
 }
