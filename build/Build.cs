@@ -33,6 +33,7 @@ partial class Build : NukeBuild
     AbsolutePath BuildDirectory => RootDirectory / "build";
     AbsolutePath SourceDirectory => RootDirectory / "src";
     AbsolutePath ArtifactsDirectory => RootDirectory / "artifacts";
+    AbsolutePath AnalysisArtifactsDirectory => ArtifactsDirectory / "Analysis";
 
     Target Clean => _ => _
         .Before(Restore)

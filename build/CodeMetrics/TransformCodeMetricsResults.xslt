@@ -33,7 +33,7 @@
 				<table style="width:100%">
 					<thead>
 						<tr>
-							<th style="text-align:center"/>
+							<th/>
 							<th>Name</th>
 							<th>MaintainabilityIndex</th>
 							<th>CyclomaticComplexity</th>

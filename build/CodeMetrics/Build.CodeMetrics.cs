@@ -3,6 +3,7 @@ using System.Xml.Xsl;
 using Nuke.Common;
 using Nuke.Common.IO;
 using Nuke.Common.Tooling;
+using static Nuke.Common.ControlFlow;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Utilities.XmlTransformation;
 
@@ -12,7 +13,7 @@ partial class Build
     readonly Tool Metrics;
 
     AbsolutePath CodeMetricsTransformXsltFile => BuildDirectory / "CodeMetrics" / "TransformCodeMetricsResults.xslt";
-    AbsolutePath CodeMetricsArtifactsDirectory => ArtifactsDirectory / "Analysis" / "CodeMetrics";
+    AbsolutePath CodeMetricsArtifactsDirectory => AnalysisArtifactsDirectory / "CodeMetrics";
     AbsolutePath CodeMetricsXmlResultsFile => CodeMetricsArtifactsDirectory / "CodeMetrics.xml";
     AbsolutePath CodeMetricsHtmlReportFile => CodeMetricsArtifactsDirectory / "CodeMetrics.html";
 
@@ -45,7 +46,7 @@ partial class Build
 
         if (html.Contains("bgcolor=\"#FF221E\""))
         {
-            ControlFlow.Fail($"CodeMetrics analysis found member with MaintainabilityIndex less than required value of '{MaintainabilityIndexMinimum}'.");
+            Fail($"CodeMetrics analysis found member with MaintainabilityIndex less than required value of '{MaintainabilityIndexMinimum}'.");
         }
     }
 }

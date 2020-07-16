@@ -15,7 +15,7 @@ partial class Build
     IReadOnlyCollection<Output> MsBuildOutput;
 
     AbsolutePath RoslynAnalyzersTransformXsltFile => BuildDirectory / "RoslynAnalyzers" / "TransformRoslynAnalyzersResults.xslt";
-    AbsolutePath RoslynAnalyzersArtifactsDirectory => ArtifactsDirectory / "Analysis" / "RoslynAnalyzers";
+    AbsolutePath RoslynAnalyzersArtifactsDirectory => AnalysisArtifactsDirectory / "RoslynAnalyzers";
     AbsolutePath RoslynAnalyzersXmlResultsFile => RoslynAnalyzersArtifactsDirectory / "RoslynAnalyzers.xml";
     AbsolutePath RoslynAnalyzersHtmlReportFile => RoslynAnalyzersArtifactsDirectory / "RoslynAnalyzers.html";
 
