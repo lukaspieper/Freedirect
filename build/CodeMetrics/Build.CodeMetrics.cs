@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text.RegularExpressions;
 using System.Xml.Xsl;
 using Nuke.Common;
 using Nuke.Common.IO;
@@ -42,11 +43,13 @@ partial class Build
 
     void FailTargetOnTooLowMaintainability()
     {
-        var html = File.ReadAllText(CodeMetricsHtmlReportFile);
+        var htmlOutput = File.ReadAllText(CodeMetricsHtmlReportFile);
 
-        if (html.Contains("bgcolor=\"#FF221E\""))
+        var numberOfIssues = Regex.Matches(htmlOutput, "bgcolor=\"#FF221E\"").Count;
+        if (numberOfIssues > 0)
         {
-            Fail($"CodeMetrics analysis found member with MaintainabilityIndex less than required value of '{MaintainabilityIndexMinimum}'.");
+            Fail($"CodeMetrics analysis found {numberOfIssues} members with MaintainabilityIndex less than required value of '{MaintainabilityIndexMinimum}'.");
         }
     }
+
 }
