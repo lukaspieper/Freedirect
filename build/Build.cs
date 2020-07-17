@@ -76,5 +76,6 @@ partial class Build : NukeBuild
         .Produces(ArtifactsDirectory)
         .DependsOn(Compile)
         .DependsOn(GetRoslynAnalyzersResults)
-        .DependsOn(CalculateMetrics);
+        .DependsOn(CalculateMetrics)
+        .DependsOn(RunReSharperInspection);
 }

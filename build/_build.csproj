@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="JetBrains.ReSharper.CommandLineTools" Version="2020.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Nuke.Common" Version="0.24.11" />
     <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="3.3.0" />
   </ItemGroup>
