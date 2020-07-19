@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application.Main.StartPoint
+namespace Freedirect.Application.Main.StartPoint
 {
     internal class StartPointFactory
     {

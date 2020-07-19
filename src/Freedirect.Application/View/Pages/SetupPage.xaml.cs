@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Application.View.Pages
+namespace Freedirect.Application.View.Pages
 {
     internal partial class SetupPage
     {

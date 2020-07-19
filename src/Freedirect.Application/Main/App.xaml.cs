@@ -1,7 +1,7 @@
 ﻿using System;
-using Application.Main.StartPoint;
+using Freedirect.Application.Main.StartPoint;
 
-namespace Application.Main
+namespace Freedirect.Application.Main
 {
     public partial class App
     {

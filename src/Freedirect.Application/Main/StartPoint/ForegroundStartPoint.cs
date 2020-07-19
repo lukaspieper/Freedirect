@@ -1,6 +1,6 @@
-﻿using Application.View;
+﻿using Freedirect.Application.View;
 
-namespace Application.Main.StartPoint
+namespace Freedirect.Application.Main.StartPoint
 {
     internal class ForegroundStartPoint : IStartPoint
     {

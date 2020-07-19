@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Freedirect.Core.ApplicationData;
 
-namespace Application.View.Pages
+namespace Freedirect.Application.View.Pages
 {
     internal partial class SearchEnginesPage
     {

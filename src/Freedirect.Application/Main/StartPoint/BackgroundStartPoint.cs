@@ -2,7 +2,7 @@
 using Freedirect.Core;
 using Freedirect.Core.ApplicationData;
 
-namespace Application.Main.StartPoint
+namespace Freedirect.Application.Main.StartPoint
 {
     internal class BackgroundStartPoint : IStartPoint
     {

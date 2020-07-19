@@ -6,7 +6,7 @@
 		<UseWPF>true</UseWPF>
 		<Platforms>x86;x64</Platforms>
 		<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-		<StartupObject>Application.Main.App</StartupObject>
+		<StartupObject>Freedirect.Application.Main.App</StartupObject>
 		<AssemblyName>Freedirect</AssemblyName>
 		<ApplicationIcon>Green_Arrow.ico</ApplicationIcon>
 	</PropertyGroup>
