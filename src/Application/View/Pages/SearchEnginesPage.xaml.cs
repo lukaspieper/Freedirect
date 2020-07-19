@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Logic.ApplicationData;
+using Freedirect.Core.ApplicationData;
 
 namespace Application.View.Pages
 {

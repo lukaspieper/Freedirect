@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Logic.ProtocolParsing
+namespace Freedirect.Core.ProtocolParsing
 {
     internal class ProtocolParserFactory
     {

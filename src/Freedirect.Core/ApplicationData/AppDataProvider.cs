@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using Logic.Utilities;
+using Freedirect.Core.Utilities;
 
-namespace Logic.ApplicationData
+namespace Freedirect.Core.ApplicationData
 {
     public class AppDataProvider
     {

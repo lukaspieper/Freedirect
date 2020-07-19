@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using Logic.ApplicationData;
-using Logic.SearchEngineReplacing;
+using Freedirect.Core.ApplicationData;
+using Freedirect.Core.SearchEngineReplacing;
 
-namespace Logic.Protocol
+namespace Freedirect.Core.Protocol
 {
     internal class EdgeProtocol : IProtocol
     {

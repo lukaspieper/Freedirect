@@ -1,6 +1,6 @@
-﻿using Logic.ApplicationData;
+﻿using Freedirect.Core.ApplicationData;
 
-namespace Logic.SearchEngineReplacing
+namespace Freedirect.Core.SearchEngineReplacing
 {
     internal class SearchEngineFinder
     {

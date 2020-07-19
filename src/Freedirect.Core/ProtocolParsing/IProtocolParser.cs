@@ -1,6 +1,6 @@
-﻿using Logic.Protocol;
+﻿using Freedirect.Core.Protocol;
 
-namespace Logic.ProtocolParsing
+namespace Freedirect.Core.ProtocolParsing
 {
     internal interface IProtocolParser
     {

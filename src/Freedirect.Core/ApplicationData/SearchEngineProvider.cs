@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Logic.ApplicationData
+namespace Freedirect.Core.ApplicationData
 {
     public class SearchEngineProvider
     {

@@ -1,6 +1,6 @@
-﻿using Logic.ApplicationData;
+﻿using Freedirect.Core.ApplicationData;
 
-namespace Logic.Protocol
+namespace Freedirect.Core.Protocol
 {
     internal interface IProtocol
     {

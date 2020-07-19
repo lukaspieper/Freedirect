@@ -3,7 +3,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Logic.Utilities
+namespace Freedirect.Core.Utilities
 {
     internal static class XmlUtilities
     {

@@ -1,4 +1,4 @@
-﻿namespace Logic.ApplicationData
+﻿namespace Freedirect.Core.ApplicationData
 {
     public class SearchEngineEntity
     {

@@ -1,6 +1,6 @@
 ﻿using System;
-using Logic;
-using Logic.ApplicationData;
+using Freedirect.Core;
+using Freedirect.Core.ApplicationData;
 
 namespace Application.Main.StartPoint
 {

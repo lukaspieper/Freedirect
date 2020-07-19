@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Logic.ApplicationData
+namespace Freedirect.Core.ApplicationData
 {
     [Serializable]
     public class AppDataEntity

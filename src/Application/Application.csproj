@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Logic\Logic.csproj" />
+		<ProjectReference Include="..\Freedirect.Core\Freedirect.Core.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

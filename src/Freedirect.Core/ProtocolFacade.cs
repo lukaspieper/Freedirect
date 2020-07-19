@@ -1,8 +1,8 @@
-﻿using Logic.ApplicationData;
-using Logic.Protocol;
-using Logic.ProtocolParsing;
+﻿using Freedirect.Core.ApplicationData;
+using Freedirect.Core.Protocol;
+using Freedirect.Core.ProtocolParsing;
 
-namespace Logic
+namespace Freedirect.Core
 {
     public class ProtocolFacade
     {
