@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Core", "Freedirect.Core\Freedirect.Core.csproj", "{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{B7D33A31-667D-4E0F-A446-AD56F414C380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Application", "Freedirect.Application\Freedirect.Application.csproj", "{B7D33A31-667D-4E0F-A446-AD56F414C380}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1} = {1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}
 	EndProjectSection
