@@ -16,7 +16,7 @@ partial class Build
     AbsolutePath CodeInspectionHtmlReportFile => CodeInspectionArtifactsDirectory / "CodeInspection.html";
 
     Target RunReSharperInspection => _ => _
-        .DependsOn(CopyAssetsToArtifacts)
+        .DependsOn(CopyStaticArtifacts)
         .After(Compile)
         .Executes(() =>
         {

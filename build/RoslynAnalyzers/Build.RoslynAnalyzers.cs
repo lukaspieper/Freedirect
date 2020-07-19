@@ -21,7 +21,7 @@ partial class Build
 
     Target GetRoslynAnalyzersResults => _ => _
         .DependsOn(Compile)
-        .DependsOn(CopyAssetsToArtifacts)
+        .DependsOn(CopyStaticArtifacts)
         .Executes(() =>
         {
             var analyzerResults = GetRoslynAnalyzersResultsFromBuildOutput();

@@ -19,7 +19,7 @@ partial class Build
     AbsolutePath CodeMetricsHtmlReportFile => CodeMetricsArtifactsDirectory / "CodeMetrics.html";
 
     Target CalculateMetrics => _ => _
-        .DependsOn(CopyAssetsToArtifacts)
+        .DependsOn(CopyStaticArtifacts)
         .After(Compile)
         .ProceedAfterFailure()
         .Executes(() =>

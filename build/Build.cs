@@ -60,14 +60,14 @@ partial class Build : NukeBuild
                 .SetConfiguration(Configuration));
         });
 
-    Target CopyAssetsToArtifacts => _ => _
+    Target CopyStaticArtifacts => _ => _
         .After(Clean)
         .Executes(() =>
         {
             EnsureExistingDirectory(ArtifactsDirectory);
 
-            CopyDirectoryRecursively(BuildDirectory / "Assets",
-                ArtifactsDirectory / "Assets",
+            CopyDirectoryRecursively(BuildDirectory / "StaticArtifacts",
+                ArtifactsDirectory,
                 DirectoryExistsPolicy.Merge,
                 FileExistsPolicy.OverwriteIfNewer);
         });
