@@ -1,0 +1,37 @@
+﻿[*.cs]
+
+# SA1200: Using directives should be placed correctly
+dotnet_diagnostic.SA1200.severity = none
+
+# SA1600: Elements should be documented
+dotnet_diagnostic.SA1600.severity = suggestion
+
+# SA1515: Single-line comment should be preceded by blank line
+dotnet_diagnostic.SA1515.severity = none
+
+# SA1512: Single-line comments should not be followed by blank line
+dotnet_diagnostic.SA1512.severity = none
+
+# SA1503: Braces should not be omitted
+dotnet_diagnostic.SA1503.severity = none
+
+# SA1309: Field names should not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+
+# SA1202: Elements should be ordered by access
+dotnet_diagnostic.SA1202.severity = none
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# SA1601: Partial elements should be documented
+dotnet_diagnostic.SA1601.severity = suggestion
+
+# CS1591: Missing XML comment for publicly visible type or member
+dotnet_diagnostic.CS1591.severity = suggestion
+
+# CA1822: Mark members as static
+dotnet_diagnostic.CA1822.severity = none
+
+# CA1031: Do not catch general exception types
+dotnet_diagnostic.CA1031.severity = suggestion

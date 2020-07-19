@@ -4,7 +4,12 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<Platforms>x86;x64</Platforms>
 		<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">

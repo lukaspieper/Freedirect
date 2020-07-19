@@ -9,7 +9,12 @@
 		<StartupObject>Freedirect.Application.Main.App</StartupObject>
 		<AssemblyName>Freedirect</AssemblyName>
 		<ApplicationIcon>Green_Arrow.ico</ApplicationIcon>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<Folder Include="Main\StartPoint\" />
