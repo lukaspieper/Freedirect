@@ -6,7 +6,7 @@
 		<UseWPF>true</UseWPF>
 		<Platforms>x86;x64</Platforms>
 		<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
-		<StartupObject>Freedirect.Application.Main.App</StartupObject>
+		<StartupObject>Freedirect.Application.Program</StartupObject>
 		<AssemblyName>Freedirect</AssemblyName>
 		<ApplicationIcon>Green_Arrow.ico</ApplicationIcon>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -17,8 +17,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Main\StartPoint\" />
 		<Folder Include="View\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Include="App.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>

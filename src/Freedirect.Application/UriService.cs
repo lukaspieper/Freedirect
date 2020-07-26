@@ -2,21 +2,14 @@
 using Freedirect.Core;
 using Freedirect.Core.ApplicationData;
 
-namespace Freedirect.Application.Main.StartPoint
+namespace Freedirect.Application
 {
-    internal class BackgroundStartPoint : IStartPoint
+    internal class UriService
     {
-        private readonly string _protocolString;
-
-        internal BackgroundStartPoint(string protocolString)
-        {
-            _protocolString = Uri.UnescapeDataString(protocolString);
-        }
-
-        public void Start()
+        public void TransformAndRunUri(Uri uri)
         {
             var protocolFacade = new ProtocolFacade();
-            protocolFacade.CreateProtocol(_protocolString);
+            protocolFacade.CreateProtocol(uri.AbsoluteUri);
 
             var data = GetAppData();
             protocolFacade.UpdateConfig(data);
