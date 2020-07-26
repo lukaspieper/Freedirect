@@ -11,7 +11,7 @@ namespace Freedirect.Core.SearchEngineReplacing
             _searchEngineName = searchEngineName;
         }
 
-        internal SearchEngineEntity GetSelectedSearchEngine()
+        internal SearchEngine GetSelectedSearchEngine()
         {
             var searchEngineProvider = new SearchEngineProvider();
 

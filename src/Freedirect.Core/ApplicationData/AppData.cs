@@ -3,7 +3,7 @@
 namespace Freedirect.Core.ApplicationData
 {
     [Serializable]
-    public class AppDataEntity
+    public class AppData
     {
         public string SearchEngineName { get; set; } = "Bing";
     }

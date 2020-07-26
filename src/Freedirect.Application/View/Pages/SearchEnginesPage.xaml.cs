@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Freedirect.Application.Configuration;
 using Freedirect.Core.ApplicationData;
 
 namespace Freedirect.Application.View.Pages

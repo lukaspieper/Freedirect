@@ -6,7 +6,7 @@ namespace Freedirect.Core.Protocol
     {
         string Scheme { get; }
 
-        void PrepareStart(AppDataEntity dataEntity);
+        void PrepareStart(AppData appData);
         void Start();
     }
 }

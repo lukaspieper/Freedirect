@@ -9,11 +9,11 @@ namespace Freedirect.Core.Protocol
         public string Scheme { get; } = "microsoft-edge";
         internal string Url { private get; set; }
 
-        public void PrepareStart(AppDataEntity dataEntity)
+        public void PrepareStart(AppData appData)
         {
             if (!UrlIsBingSearch()) return;
 
-            var searchEngineName = dataEntity.SearchEngineName;
+            var searchEngineName = appData.SearchEngineName;
             var finder = new SearchEngineFinder(searchEngineName);
             var searchEngine = finder.GetSelectedSearchEngine();
 

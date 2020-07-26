@@ -1,4 +1,5 @@
 ﻿using System;
+using Freedirect.Application.Configuration;
 using Freedirect.Core;
 using Freedirect.Core.ApplicationData;
 
@@ -19,7 +20,7 @@ namespace Freedirect.Application
             System.Windows.Application.Current.Shutdown();
         }
 
-        private AppDataEntity GetAppData()
+        private AppData GetAppData()
         {
             var appDataProvider = new AppDataProvider();
             return appDataProvider.GetAppData();

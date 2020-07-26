@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
-using Freedirect.Core.Utilities;
+using Freedirect.Core.ApplicationData;
 
-namespace Freedirect.Core.ApplicationData
+namespace Freedirect.Application.Configuration
 {
     public class AppDataProvider
     {
         private readonly string _path;
-        private AppDataEntity _appDataEntity;
+        private AppData _appData;
 
         public AppDataProvider()
         {
@@ -18,18 +18,18 @@ namespace Freedirect.Core.ApplicationData
 
             _path = Path.Combine(_path, "Settings.xml");
 
-            _appDataEntity = File.Exists(_path) ? XmlUtilities.DeSerializeObject<AppDataEntity>(_path) : new AppDataEntity();
+            _appData = File.Exists(_path) ? XmlUtilities.DeSerializeObject<AppData>(_path) : new AppData();
         }
 
-        public AppDataEntity GetAppData()
+        public AppData GetAppData()
         {
-            return _appDataEntity;
+            return _appData;
         }
 
-        public void UpdateAppData(AppDataEntity entity)
+        public void UpdateAppData(AppData entity)
         {
             XmlUtilities.SerializeObject(entity, _path);
-            _appDataEntity = entity;
+            _appData = entity;
         }  
     }
 }
