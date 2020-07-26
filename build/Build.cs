@@ -78,5 +78,6 @@ partial class Build : NukeBuild
         .DependsOn(GetRoslynAnalyzersResults)
         .DependsOn(CalculateMetrics)
         .DependsOn(RunReSharperInspection)
-        .DependsOn(FindDuplications);
+        .DependsOn(FindDuplications)
+        .DependsOn(RunTestsWithCoverage);
 }
