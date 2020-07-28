@@ -72,4 +72,10 @@
 		</EmbeddedResource>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="Data\SearchEngines.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>

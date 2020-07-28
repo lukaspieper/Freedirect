@@ -1,0 +1,26 @@
+﻿[
+	{
+		"Name": "Bing",
+		"Address": null
+	},
+	{
+		"Name": "Google",
+		"Address": "https://www.google.com/search?q="
+	},
+	{
+		"Name": "DuckDuckGo",
+		"Address": "https://duckduckgo.com/?q="
+	},
+	{
+		"Name": "Yahoo",
+		"Address": "https://search.yahoo.com/search?p="
+	},
+	{
+		"Name": "Qwant",
+		"Address": "https://www.qwant.com/?q="
+	},
+	{
+		"Name": "Startpage",
+		"Address": "https://www.startpage.com/do/dsearch?query="
+	}
+]

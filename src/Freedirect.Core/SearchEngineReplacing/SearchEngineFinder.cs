@@ -13,9 +13,9 @@ namespace Freedirect.Core.SearchEngineReplacing
 
         internal SearchEngine GetSelectedSearchEngine()
         {
-            var searchEngineProvider = new SearchEngineProvider();
+            var searchEngineProvider = new SearchEnginesProvider();
 
-            foreach (var searchEngine in searchEngineProvider.SearchEngines)
+            foreach (var searchEngine in searchEngineProvider.GetSearchEngines())
             {
                 if (searchEngine.Name != _searchEngineName || searchEngine.Address is null) continue;
 

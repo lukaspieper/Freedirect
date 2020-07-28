@@ -7,7 +7,7 @@ namespace Freedirect.Application.View.Pages
     internal partial class SearchEnginesPage
     {
         public List<string> SearchEnginesNames { get; set; } = new List<string>();
-        private readonly SearchEngineProvider _searchEngineProvider = new SearchEngineProvider();
+        private readonly SearchEnginesProvider _searchEnginesProvider = new SearchEnginesProvider();
         private readonly UserSettingsProvider _userSettingsProvider = new UserSettingsProvider();
 
         public string SelectedSearchEngineName
@@ -30,7 +30,7 @@ namespace Freedirect.Application.View.Pages
 
         public SearchEnginesPage()
         {
-            foreach (var searchEngine in _searchEngineProvider.SearchEngines)
+            foreach (var searchEngine in _searchEnginesProvider.GetSearchEngines())
             {
                 SearchEnginesNames.Add(searchEngine.Name);
             }
