@@ -29,7 +29,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Freedirect.Application\Freedirect.Application.csproj" />
 		<ProjectReference Include="..\Freedirect.Core\Freedirect.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Application\" />
 	</ItemGroup>
 
 </Project>

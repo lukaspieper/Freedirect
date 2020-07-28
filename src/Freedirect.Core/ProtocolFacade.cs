@@ -1,28 +1,21 @@
-﻿using Freedirect.Core.ApplicationData;
-using Freedirect.Core.Protocol;
-using Freedirect.Core.ProtocolParsing;
+﻿using System;
+using Freedirect.Core.ApplicationData;
+using Freedirect.Core.ProtocolExtractor;
+using Freedirect.Core.ProtocolExtractor.Result;
 
 namespace Freedirect.Core
 {
     public class ProtocolFacade
     {
-        private IProtocol _protocol;
+        private IProtocolExtractorResult _extractorResult;
         private UserSettings _data;
 
-        public void CreateProtocol(string protocolString)
+        public void CreateProtocol(Uri uri)
         {
-            var parser = CreateProtocolParser(protocolString);
+            var extractorFactory = new ProtocolExtractorFactory();
+            var extractor = extractorFactory.CreateCorrespondingProtocolExtractor(uri);
 
-            if (parser is null) return;
-
-            parser.Parse();
-            _protocol = parser.GetProtocol();
-        }
-
-        private IProtocolParser CreateProtocolParser(string protocolString)
-        {
-            var factory = new ProtocolParserFactory(protocolString);
-            return factory.CreateProtocolParser();
+            _extractorResult = extractor?.Parse();
         }
 
         public void UpdateConfig(UserSettings data)
@@ -32,8 +25,9 @@ namespace Freedirect.Core
 
         public void StartProtocol()
         {
-            _protocol?.PrepareStart(_data);
-            _protocol?.Start();
+            // TODO
+            /*_extractorResult?.PrepareStart(_data);
+            _extractorResult?.Start();*/
         }
     }
 }

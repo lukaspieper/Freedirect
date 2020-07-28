@@ -11,7 +11,7 @@ namespace Freedirect.Application
         internal void TransformAndRunUri(Uri uri)
         {
             var protocolFacade = new ProtocolFacade();
-            protocolFacade.CreateProtocol(uri.AbsoluteUri);
+            protocolFacade.CreateProtocol(uri);
 
             protocolFacade.UpdateConfig(_userSettingsProvider.UserSettings);
 
