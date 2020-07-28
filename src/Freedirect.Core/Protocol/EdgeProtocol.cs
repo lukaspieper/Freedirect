@@ -9,11 +9,11 @@ namespace Freedirect.Core.Protocol
         public string Scheme { get; } = "microsoft-edge";
         internal string Url { private get; set; }
 
-        public void PrepareStart(AppData appData)
+        public void PrepareStart(UserSettings userSettings)
         {
             if (!UrlIsBingSearch()) return;
 
-            var searchEngineName = appData.SearchEngineName;
+            var searchEngineName = userSettings.SelectedSearchEngine;
             var finder = new SearchEngineFinder(searchEngineName);
             var searchEngine = finder.GetSelectedSearchEngine();
 
@@ -29,7 +29,7 @@ namespace Freedirect.Core.Protocol
             if (Url.StartsWith("https://www.bing.com/search?q="))
             {
                 result = true;
-            }            
+            }
             else if (Url.StartsWith("http://www.bing.com/search?q="))
             {
                 //Replacing the search engine only works with https://www.bing.com/search?q=

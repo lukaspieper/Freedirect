@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Freedirect.Application.Configuration;
+using Freedirect.Application.UserSettings;
 using Freedirect.Core.ApplicationData;
 
 namespace Freedirect.Application.View.Pages
@@ -8,23 +8,23 @@ namespace Freedirect.Application.View.Pages
     {
         public List<string> SearchEnginesNames { get; set; } = new List<string>();
         private readonly SearchEngineProvider _searchEngineProvider = new SearchEngineProvider();
-        private readonly AppDataProvider _appDataProvider = new AppDataProvider();
+        private readonly UserSettingsProvider _userSettingsProvider = new UserSettingsProvider();
 
         public string SelectedSearchEngineName
         {
             get
             {
-                var appDataEntity = _appDataProvider.GetAppData();
-                return appDataEntity.SearchEngineName;
+                var appDataEntity = _userSettingsProvider.UserSettings;
+                return appDataEntity.SelectedSearchEngine;
             }
 
             set
             {
                 if (string.IsNullOrEmpty(value)) return;
 
-                var appDataEntity = _appDataProvider.GetAppData();
-                appDataEntity.SearchEngineName = value;
-                _appDataProvider.UpdateAppData(appDataEntity);
+                var appDataEntity = _userSettingsProvider.UserSettings;
+                appDataEntity.SelectedSearchEngine = value;
+                _userSettingsProvider.UpdateUserSettings(appDataEntity);
             }
         }
 

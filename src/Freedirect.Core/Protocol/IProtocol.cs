@@ -6,7 +6,7 @@ namespace Freedirect.Core.Protocol
     {
         string Scheme { get; }
 
-        void PrepareStart(AppData appData);
+        void PrepareStart(UserSettings userSettings);
         void Start();
     }
 }

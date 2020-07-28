@@ -7,7 +7,7 @@ namespace Freedirect.Core
     public class ProtocolFacade
     {
         private IProtocol _protocol;
-        private AppData _data;
+        private UserSettings _data;
 
         public void CreateProtocol(string protocolString)
         {
@@ -25,7 +25,7 @@ namespace Freedirect.Core
             return factory.CreateProtocolParser();
         }
 
-        public void UpdateConfig(AppData data)
+        public void UpdateConfig(UserSettings data)
         {
             _data = data;
         }
