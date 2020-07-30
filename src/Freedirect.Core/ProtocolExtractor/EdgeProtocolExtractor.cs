@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using Freedirect.Core.ProtocolExtractor.Result;
+using Freedirect.Core.Protocol;
 
 namespace Freedirect.Core.ProtocolExtractor
 {
@@ -13,11 +13,11 @@ namespace Freedirect.Core.ProtocolExtractor
             _uri = uri;
         }
 
-        public IProtocolExtractorResult Parse()
+        public IProtocol Parse()
         {
             var url = IsUrlInQuery() ? ParseUrlFromQuery() : new Uri(_uri.LocalPath);
 
-            return url != null ? new EdgeProtocolExtractorResult(url) : null;
+            return url != null ? new UriProtocol(url) : null;
         }
 
         private bool IsUrlInQuery()

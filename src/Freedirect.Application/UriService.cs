@@ -11,13 +11,11 @@ namespace Freedirect.Application
         internal void TransformAndRunUri(Uri uri)
         {
             var protocolFacade = new ProtocolFacade();
-            protocolFacade.CreateProtocol(uri);
+            protocolFacade.ExtractProtocol(uri);
 
-            protocolFacade.UpdateConfig(_userSettingsProvider.UserSettings);
+            protocolFacade.TransformProtocol(_userSettingsProvider.UserSettings);
 
             protocolFacade.StartProtocol();
-
-            System.Windows.Application.Current.Shutdown();
         }
     }
 }

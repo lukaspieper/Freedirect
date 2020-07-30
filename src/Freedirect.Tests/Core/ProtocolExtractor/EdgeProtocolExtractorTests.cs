@@ -1,6 +1,6 @@
 ﻿using System;
+using Freedirect.Core.Protocol;
 using Freedirect.Core.ProtocolExtractor;
-using Freedirect.Core.ProtocolExtractor.Result;
 using Xunit;
 
 namespace Freedirect.Tests.Core.ProtocolExtractor
@@ -17,7 +17,7 @@ namespace Freedirect.Tests.Core.ProtocolExtractor
 
             var result = edgeProtocolExtractor.Parse();
 
-            Assert.Equal(UrlString, (result as EdgeProtocolExtractorResult)?.Url.AbsoluteUri);
+            Assert.Equal(UrlString, (result as UriProtocol)?.Uri.AbsoluteUri);
         }
 
         [Fact]
@@ -39,7 +39,7 @@ namespace Freedirect.Tests.Core.ProtocolExtractor
 
             var result = edgeProtocolExtractor.Parse();
 
-            Assert.Equal(UrlString, (result as EdgeProtocolExtractorResult)?.Url.AbsoluteUri);
+            Assert.Equal(UrlString, (result as UriProtocol)?.Uri.AbsoluteUri);
         }
     }
 }

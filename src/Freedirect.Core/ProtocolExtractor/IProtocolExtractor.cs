@@ -1,9 +1,9 @@
-﻿using Freedirect.Core.ProtocolExtractor.Result;
+﻿using Freedirect.Core.Protocol;
 
 namespace Freedirect.Core.ProtocolExtractor
 {
     internal interface IProtocolExtractor
     {
-        IProtocolExtractorResult Parse();
+        IProtocol Parse();
     }
 }
