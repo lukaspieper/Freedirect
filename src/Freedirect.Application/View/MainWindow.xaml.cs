@@ -12,11 +12,11 @@ namespace Freedirect.Application.View
         private readonly AboutPage _aboutPage = new AboutPage();
         private readonly HistoryPage _historyPage = new HistoryPage();
 
-        internal MainWindow()
+        public MainWindow()
         {
             NavigationCommands.BrowseBack.InputGestures.Clear();
             NavigationCommands.BrowseForward.InputGestures.Clear();
-            
+
             InitializeComponent();
             ContentFrame.Navigate(new SetupPage());
         }

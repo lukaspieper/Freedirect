@@ -1,35 +1,36 @@
 ﻿using System.Collections.Generic;
-using Freedirect.Core.ApplicationData;
+using Freedirect.Application.Data;
+using Freedirect.Application.UserSettings;
 
 namespace Freedirect.Application.View.Pages
 {
     internal partial class SearchEnginesPage
     {
         public List<string> SearchEnginesNames { get; set; } = new List<string>();
-        private readonly SearchEngineProvider _searchEngineProvider = new SearchEngineProvider();
-        private readonly AppDataProvider _appDataProvider = new AppDataProvider();
+        private readonly SearchEnginesProvider _searchEnginesProvider = new SearchEnginesProvider();
+        private readonly UserSettingsProvider _userSettingsProvider = new UserSettingsProvider();
 
         public string SelectedSearchEngineName
         {
             get
             {
-                var appDataEntity = _appDataProvider.GetAppData();
-                return appDataEntity.SearchEngineName;
+                var appDataEntity = _userSettingsProvider.UserSettings;
+                return appDataEntity.SelectedSearchEngine;
             }
 
             set
             {
                 if (string.IsNullOrEmpty(value)) return;
 
-                var appDataEntity = _appDataProvider.GetAppData();
-                appDataEntity.SearchEngineName = value;
-                _appDataProvider.UpdateAppData(appDataEntity);
+                var appDataEntity = _userSettingsProvider.UserSettings;
+                appDataEntity.SelectedSearchEngine = value;
+                _userSettingsProvider.UpdateUserSettings(appDataEntity);
             }
         }
 
         public SearchEnginesPage()
         {
-            foreach (var searchEngine in _searchEngineProvider.SearchEngines)
+            foreach (var searchEngine in _searchEnginesProvider.SearchEngines)
             {
                 SearchEnginesNames.Add(searchEngine.Name);
             }
