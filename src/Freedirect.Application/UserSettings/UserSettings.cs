@@ -1,7 +1,7 @@
 ﻿namespace Freedirect.Application.UserSettings
 {
-    internal class UserSettings
+    public class UserSettings
     {
-        internal string SelectedSearchEngine { get; set; } = "Bing";
+        public string SelectedSearchEngine { get; set; } = "Bing";
     }
 }
