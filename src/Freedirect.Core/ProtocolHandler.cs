@@ -5,7 +5,7 @@ using Freedirect.Core.ProtocolTransformer;
 
 namespace Freedirect.Core
 {
-    public class ProtocolFacade
+    public class ProtocolHandler
     {
         private readonly ProtocolExtractorFactory _extractorFactory = new ProtocolExtractorFactory();
         private readonly ProtocolTransformerFactory _transformerFactory = new ProtocolTransformerFactory();

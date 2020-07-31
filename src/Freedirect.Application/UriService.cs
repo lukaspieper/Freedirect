@@ -12,15 +12,15 @@ namespace Freedirect.Application
 
         internal void TransformAndRunUri(Uri uri)
         {
-            var protocolFacade = new ProtocolFacade();
+            var protocolHandler = new ProtocolHandler();
 
-            protocolFacade.ExtractProtocol(uri);
+            protocolHandler.ExtractProtocol(uri);
 
             var searchEngineName = _userSettingsProvider.UserSettings.SelectedSearchEngine;
             var searchEngine = _searchEnginesProvider.GetSearchEngineByName(searchEngineName);
-            protocolFacade.TransformProtocol(searchEngine);
+            protocolHandler.TransformProtocol(searchEngine);
 
-            protocolFacade.StartProtocol();
+            protocolHandler.StartProtocol();
         }
     }
 }
