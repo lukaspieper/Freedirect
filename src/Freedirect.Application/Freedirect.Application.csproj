@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="View\" />
+		<Folder Include="Views\" />
 	</ItemGroup>
 
 	<ItemGroup>

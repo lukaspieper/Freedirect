@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using Freedirect.Application.View;
+using Freedirect.Application.Views;
 using Prism.Ioc;
 
 namespace Freedirect.Application

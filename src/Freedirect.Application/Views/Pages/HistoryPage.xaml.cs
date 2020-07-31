@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Freedirect.Application.View.Pages
+namespace Freedirect.Application.Views.Pages
 {
     public partial class HistoryPage : Page
     {

@@ -2,7 +2,7 @@
 using Freedirect.Application.Data;
 using Freedirect.Application.UserSettings;
 
-namespace Freedirect.Application.View.Pages
+namespace Freedirect.Application.Views.Pages
 {
     internal partial class SearchEnginesPage
     {

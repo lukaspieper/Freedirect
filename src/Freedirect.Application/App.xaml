@@ -6,12 +6,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/View/Resources/ToggleButtonStyle.xaml"/>
-                <ResourceDictionary Source="/View/Resources/RadioButtonStyle.xaml"/>
-                <ResourceDictionary Source="/View/Resources/ButtonStyle.xaml"/>
-                <ResourceDictionary Source="/View/Resources/TextBlockStyle.xaml"/>
-                <ResourceDictionary Source="/View/Resources/ListBoxStyle.xaml"/>
-                <ResourceDictionary Source="/View/Resources/ScrollBarStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/ToggleButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/RadioButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/ButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/TextBlockStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/ListBoxStyle.xaml"/>
+                <ResourceDictionary Source="/Views/Resources/ScrollBarStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

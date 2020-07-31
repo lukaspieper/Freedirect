@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Freedirect.Application.View.Pages;
+using Freedirect.Application.Views.Pages;
 
-namespace Freedirect.Application.View
+namespace Freedirect.Application.Views
 {
     internal partial class MainWindow
     {
