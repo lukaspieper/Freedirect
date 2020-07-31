@@ -1,9 +1,7 @@
 ﻿using System;
-using Freedirect.Core.ApplicationData;
 using Freedirect.Core.Protocol;
 using Freedirect.Core.ProtocolExtractor;
 using Freedirect.Core.ProtocolTransformer;
-using Freedirect.Core.SearchEngineReplacing;
 
 namespace Freedirect.Core
 {
@@ -19,11 +17,8 @@ namespace Freedirect.Core
             _protocol = extractor?.Parse();
         }
 
-        public void TransformProtocol(UserSettings settings)
+        public void TransformProtocol(SearchEngine searchEngine)
         {
-            var finder = new SearchEngineFinder(settings.SelectedSearchEngine);
-            var searchEngine = finder.GetSelectedSearchEngine();
-
             var transformer = _transformerFactory.CreateCorrespondingProtocolTransformer(_protocol, searchEngine);
             _protocol = transformer?.Transform();
         }

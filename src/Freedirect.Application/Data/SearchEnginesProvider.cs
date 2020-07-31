@@ -3,17 +3,25 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.Json;
+using Freedirect.Core;
 
-namespace Freedirect.Core.ApplicationData
+namespace Freedirect.Application.Data
 {
-    public class SearchEnginesProvider
+    internal class SearchEnginesProvider
     {
-        public List<SearchEngine> GetSearchEngines()
+        internal SearchEnginesProvider()
         {
             var jsonFilePath = GetSearchEnginesJsonFilePath();
             var json = File.ReadAllText(jsonFilePath);
 
-            return JsonSerializer.Deserialize<List<SearchEngine>>(json);
+            SearchEngines = JsonSerializer.Deserialize<List<SearchEngine>>(json);
+        }
+
+        internal List<SearchEngine> SearchEngines { get; }
+
+        internal SearchEngine GetSearchEngineByName(string searchEngineName)
+        {
+            return SearchEngines.FirstOrDefault(searchEngine => searchEngine.Name == searchEngineName && searchEngine.Address != null);
         }
 
         private string GetSearchEnginesJsonFilePath()

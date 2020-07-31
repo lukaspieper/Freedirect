@@ -1,10 +1,7 @@
-﻿namespace Freedirect.Core.ApplicationData
+﻿namespace Freedirect.Core
 {
     public class SearchEngine
     {
-        public string Name { get; set; }
-        public string Address { get; set; }
-
         // ReSharper disable once UnusedMember.Global
         public SearchEngine()
         {
@@ -15,5 +12,9 @@
             Name = name;
             Address = address;
         }
+
+        public string Name { get; set; }
+
+        public string Address { get; set; }
     }
 }

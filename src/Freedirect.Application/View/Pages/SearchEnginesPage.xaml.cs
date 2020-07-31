@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Freedirect.Application.Data;
 using Freedirect.Application.UserSettings;
-using Freedirect.Core.ApplicationData;
 
 namespace Freedirect.Application.View.Pages
 {
@@ -30,7 +30,7 @@ namespace Freedirect.Application.View.Pages
 
         public SearchEnginesPage()
         {
-            foreach (var searchEngine in _searchEnginesProvider.GetSearchEngines())
+            foreach (var searchEngine in _searchEnginesProvider.SearchEngines)
             {
                 SearchEnginesNames.Add(searchEngine.Name);
             }

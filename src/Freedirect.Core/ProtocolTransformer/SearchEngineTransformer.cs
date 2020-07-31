@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Freedirect.Core.ApplicationData;
 using Freedirect.Core.Protocol;
 
 namespace Freedirect.Core.ProtocolTransformer

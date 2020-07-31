@@ -1,5 +1,5 @@
 ﻿using System;
-using Freedirect.Core.ApplicationData;
+using Freedirect.Core;
 using Freedirect.Core.Protocol;
 using Freedirect.Core.ProtocolTransformer;
 using Xunit;

@@ -1,5 +1,4 @@
-﻿using Freedirect.Core.ApplicationData;
-using Freedirect.Core.Protocol;
+﻿using Freedirect.Core.Protocol;
 
 namespace Freedirect.Core.ProtocolTransformer
 {
