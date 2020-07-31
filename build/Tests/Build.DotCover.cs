@@ -42,7 +42,7 @@ partial class Build
     string BuildDotCoverArguments()
     {
         var arguments =
-            $"dotnet --output=DotCover.html --reportType=HTML -- test {Solution} --logger \"trx;LogFileName={DotNetTestTrxReportFile}\"";
+            $"dotnet --output=DotCover.html --reportType=HTML --Filters={DotCoverFilter} -- test {Solution} --logger \"trx;LogFileName={DotNetTestTrxReportFile}\"";
 
         if (InvokedTargets.Contains(Restore))
         {
