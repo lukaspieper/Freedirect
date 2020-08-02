@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using Freedirect.Application.Data;
+using Freedirect.Application.UserSettings;
 using Freedirect.Application.Views;
 using Freedirect.Application.Views.Pages;
 using Prism.Ioc;
@@ -18,6 +20,9 @@ namespace Freedirect.Application
             containerRegistry.RegisterForNavigation<SearchEnginesPage>(NavigationNames.SearchEnginesPage);
             containerRegistry.RegisterForNavigation<HistoryPage>(NavigationNames.HistoryPage);
             containerRegistry.RegisterForNavigation<AboutPage>(NavigationNames.AboutPage);
+
+            containerRegistry.RegisterSingleton<SearchEnginesProvider>();
+            containerRegistry.RegisterSingleton<UserSettingsProvider>();
         }
     }
 }
