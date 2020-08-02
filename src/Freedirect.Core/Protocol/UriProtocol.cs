@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using Freedirect.Core.Utilities;
 
 namespace Freedirect.Core.Protocol
 {
@@ -14,13 +14,7 @@ namespace Freedirect.Core.Protocol
 
         public void Start()
         {
-            var processStartInfo = new ProcessStartInfo
-            {
-                FileName = Uri.AbsoluteUri,
-                UseShellExecute = true,
-            };
-
-            Process.Start(processStartInfo);
+            UriProcess.Start(Uri);
         }
     }
 }

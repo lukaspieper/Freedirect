@@ -4,14 +4,19 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:p="clr-namespace:Freedirect.Application.Properties"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="{x:Static p:Resources.Setup}" x:ClassModifier="internal">
+      xmlns:prism="http://prismlibrary.com/"
+      xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels.Pages"
+      mc:Ignorable="d"
+      x:ClassModifier="internal"
+      d:DataContext="{d:DesignInstance viewModels:SetupPageViewModel }"
+      prism:ViewModelLocator.AutoWireViewModel="True"
+      Title="{x:Static p:Resources.Setup}">
 
     <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15">
         <StackPanel>
             <TextBlock Text="{x:Static p:Resources.FirstStep}" Margin="0,0,0,5"/>
-            <Button Content="{x:Static p:Resources.DefaultAppsSettings}" Margin="0,0,0,5" Click="OpenDefaultAppsSettings" />
+            <Button Content="{x:Static p:Resources.DefaultAppsSettings}" Margin="0,0,0,5"
+                    Command="{Binding OpenDefaultAppsSettingsCommand}"/>
             <TextBlock Text="{x:Static p:Resources.SecondStep}" Margin="0,0,0,5"/>
             <TextBlock Text="{x:Static p:Resources.ThirdStep}" Margin="0,0,0,5"/>
             <TextBlock Text="{x:Static p:Resources.FourthStep}" Margin="0,0,0,5"/>
