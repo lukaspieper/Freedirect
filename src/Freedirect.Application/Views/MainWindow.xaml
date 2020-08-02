@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:p="clr-namespace:Freedirect.Application.Properties"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:views="clr-namespace:Freedirect.Application.Views"
+        xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels"
         mc:Ignorable="d"
-        Title="{x:Static p:Resources.AppTitle}" Height="400" Width="700" MinHeight="350" MinWidth="500" x:ClassModifier="internal">
+        x:ClassModifier="internal"
+        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel }"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{x:Static p:Resources.AppTitle}" Height="400" Width="700" MinHeight="350" MinWidth="500">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -19,15 +26,18 @@
             </Border.Effect>
 
             <DockPanel>
-                <RadioButton Content="{x:Static p:Resources.Setup}" IsChecked="True" Click="MainMenuButton_Click" />
-                <RadioButton Content="{x:Static p:Resources.SearchEngine}" Click="MainMenuButton_Click" />
-                <ToggleButton x:Name="TogglePopupButton" Content="• • •" Width="37" Height="37" 
-                              HorizontalAlignment="Right" />
+                <RadioButton Content="{x:Static p:Resources.Setup}" IsChecked="True" 
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                <RadioButton Content="{x:Static p:Resources.SearchEngine}"
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SearchEnginesPage}"/>
+                
+                <ToggleButton x:Name="TogglePopupButton" Content="• • •" Width="37" Height="37" HorizontalAlignment="Right" 
+                              IsChecked="{Binding SecondaryMenuIsShown, Mode=TwoWay}"/>
             </DockPanel>
         </Border>
 
-        <Popup x:Name="Popup" StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
-               IsOpen="{Binding IsChecked, ElementName=TogglePopupButton, Mode=TwoWay}" 
+        <Popup StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
+               IsOpen="{Binding SecondaryMenuIsShown, Mode=TwoWay}"
                PlacementTarget="{Binding ElementName=TogglePopupButton}" Placement="Left" HorizontalOffset="37" VerticalOffset="37">
 
             <StackPanel Width="150" Background="White" Margin="8,0,0,8">
@@ -35,13 +45,15 @@
                     <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
                 </StackPanel.Effect>
 
-                <Button Style="{DynamicResource MenuItemButton}" Click="MenuItemButton_Click" Tag="History">
+                <Button Style="{DynamicResource MenuItemButton}" 
+                        Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.HistoryPage}">
                     <StackPanel Orientation="Horizontal" Margin="10,5">
                         <Rectangle Fill="Gray" Width="20" Height="20"/>
                         <TextBlock Text="{x:Static p:Resources.History}" FontSize="15" Margin="10,0"/>
                     </StackPanel>
                 </Button>
-                <Button  Style="{DynamicResource MenuItemButton}" Click="MenuItemButton_Click" Tag="About">
+                <Button  Style="{DynamicResource MenuItemButton}" 
+                         Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.AboutPage}">
                     <StackPanel Orientation="Horizontal" Margin="10,5">
                         <Rectangle Fill="Gray" Width="20" Height="20"/>
                         <TextBlock Text="{x:Static p:Resources.About}" FontSize="15" Margin="10,0"/>
@@ -50,6 +62,14 @@
             </StackPanel>
         </Popup>
 
-        <Frame x:Name="ContentFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Background="#EDEDED"/>
+        <Frame prism:RegionManager.RegionName="{x:Static views:NavigationNames.ContentRegion}"
+               NavigationUIVisibility="Hidden" Grid.Row="1" Background="#EDEDED">
+            <!-- Navigating to SetupPage on application startup -->
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Frame>
     </Grid>
 </Window>
