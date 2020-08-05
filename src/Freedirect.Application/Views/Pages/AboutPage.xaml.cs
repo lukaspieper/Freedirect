@@ -1,10 +1,8 @@
-﻿using System.Windows.Controls;
-
-namespace Freedirect.Application.Views.Pages
+﻿namespace Freedirect.Application.Views.Pages
 {
-    public partial class AboutPage : Page
+    internal partial class AboutPage
     {
-        public AboutPage()
+        internal AboutPage()
         {
             InitializeComponent();
         }

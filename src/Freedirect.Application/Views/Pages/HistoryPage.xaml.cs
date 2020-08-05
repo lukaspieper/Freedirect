@@ -1,10 +1,8 @@
-﻿using System.Windows.Controls;
-
-namespace Freedirect.Application.Views.Pages
+﻿namespace Freedirect.Application.Views.Pages
 {
-    public partial class HistoryPage : Page
+    internal partial class HistoryPage
     {
-        public HistoryPage()
+        internal HistoryPage()
         {
             InitializeComponent();
         }

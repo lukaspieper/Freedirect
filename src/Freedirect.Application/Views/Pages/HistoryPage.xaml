@@ -3,25 +3,16 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:prism="http://prismlibrary.com/"
+      xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      x:ClassModifier="internal"
+      d:DataContext="{d:DesignInstance viewModels:HistoryPageViewModel }"
+      prism:ViewModelLocator.AutoWireViewModel="True"
       Title="HistoryPage">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="35"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <DockPanel>
-            <Button Content="Clear all" HorizontalAlignment="Right"/>
-        </DockPanel>
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="15">
-            <ListBox>
-                <ListBoxItem/>
-                <ListBoxItem/>
-                <ListBoxItem/>
-                <ListBoxItem/>
-            </ListBox>
-        </ScrollViewer>
-    </Grid>
+    <DockPanel>
+        <Button Content="Clear all" DockPanel.Dock="Top" HorizontalAlignment="Right"/>
+        <ListBox ItemsSource="{Binding History}" HorizontalAlignment="Stretch"/>
+    </DockPanel>
 </Page>

@@ -2,7 +2,7 @@
 {
     internal partial class SearchEnginesPage
     {
-        public SearchEnginesPage()
+        internal SearchEnginesPage()
         {
             InitializeComponent();
         }

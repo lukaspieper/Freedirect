@@ -12,14 +12,12 @@
       prism:ViewModelLocator.AutoWireViewModel="True"
       Title="{x:Static p:Resources.Setup}">
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15">
-        <StackPanel>
-            <TextBlock Text="{x:Static p:Resources.FirstStep}" Margin="0,0,0,5"/>
-            <Button Content="{x:Static p:Resources.DefaultAppsSettings}" Margin="0,0,0,5"
+    <StackPanel>
+        <TextBlock Text="{x:Static p:Resources.FirstStep}" Margin="0,0,0,5"/>
+        <Button Content="{x:Static p:Resources.DefaultAppsSettings}" Margin="0,0,0,5"
                     Command="{Binding OpenDefaultAppsSettingsCommand}"/>
-            <TextBlock Text="{x:Static p:Resources.SecondStep}" Margin="0,0,0,5"/>
-            <TextBlock Text="{x:Static p:Resources.ThirdStep}" Margin="0,0,0,5"/>
-            <TextBlock Text="{x:Static p:Resources.FourthStep}" Margin="0,0,0,5"/>
-        </StackPanel>
-    </ScrollViewer>
+        <TextBlock Text="{x:Static p:Resources.SecondStep}" Margin="0,0,0,5"/>
+        <TextBlock Text="{x:Static p:Resources.ThirdStep}" Margin="0,0,0,5"/>
+        <TextBlock Text="{x:Static p:Resources.FourthStep}" Margin="0,0,0,5"/>
+    </StackPanel>
 </Page>
