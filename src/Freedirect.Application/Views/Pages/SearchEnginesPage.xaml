@@ -8,7 +8,7 @@
       xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels.Pages"
       mc:Ignorable="d" 
       x:ClassModifier="internal"
-      d:DataContext="{d:DesignInstance viewModels:SearchEnginesPageViewModel }"
+      d:DataContext="{d:DesignInstance viewModels:SearchEnginesPageViewModel}"
       prism:ViewModelLocator.AutoWireViewModel="True"
       Title="{x:Static p:Resources.SearchEngine}">
 
@@ -16,6 +16,7 @@
         <TextBlock Text="{x:Static p:Resources.SearchEngineInfo}"/>
         <TextBlock Text="{x:Static p:Resources.FavouriteSearchEngine}" FontSize="18" Margin="0,10"/>
         <ListBox ItemsSource="{Binding SearchEnginesNames}" SelectedItem="{Binding SelectedSearchEngineName}"/>
-        <Button Content="{x:Static p:Resources.DifferentSearchEngine}" Style="{DynamicResource LinkButton}" Margin="0,10"/>
+        <Button Content="{x:Static p:Resources.DifferentSearchEngine}" Style="{DynamicResource LinkButton}" Margin="0,10"
+                Command="{Binding NavigateToAboutCommand}"/>
     </StackPanel>
 </Page>
