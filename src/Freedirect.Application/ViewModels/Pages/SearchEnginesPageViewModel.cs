@@ -1,7 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
-using Freedirect.Application.Data;
-using Freedirect.Application.UserSettings;
+using Freedirect.Application.Settings;
 using Freedirect.Application.Views;
 using Prism.Commands;
 using Prism.Regions;

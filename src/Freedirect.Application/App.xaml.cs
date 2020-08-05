@@ -1,6 +1,5 @@
 ﻿using System.Windows;
-using Freedirect.Application.Data;
-using Freedirect.Application.UserSettings;
+using Freedirect.Application.Settings;
 using Freedirect.Application.Views;
 using Freedirect.Application.Views.Pages;
 using Prism.Ioc;

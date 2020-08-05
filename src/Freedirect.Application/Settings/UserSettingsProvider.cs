@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text.Json;
 
-namespace Freedirect.Application.UserSettings
+namespace Freedirect.Application.Settings
 {
     internal class UserSettingsProvider
     {

@@ -1,4 +1,4 @@
-﻿namespace Freedirect.Application.UserSettings
+﻿namespace Freedirect.Application.Settings
 {
     public class UserSettings
     {

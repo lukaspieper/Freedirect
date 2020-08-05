@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text.Json;
 using Freedirect.Core;
 
-namespace Freedirect.Application.Data
+namespace Freedirect.Application.Settings
 {
     internal class SearchEnginesProvider
     {
@@ -29,7 +29,7 @@ namespace Freedirect.Application.Data
             var executableFilePath = Assembly.GetExecutingAssembly().Location;
             var executableFile = new FileInfo(executableFilePath);
 
-            var dataDirectory = executableFile.Directory?.GetDirectories("Data").FirstOrDefault();
+            var dataDirectory = executableFile.Directory?.GetDirectories("Resources").FirstOrDefault();
             return dataDirectory?.GetFiles("SearchEngines.json").FirstOrDefault()?.FullName;
         }
     }
