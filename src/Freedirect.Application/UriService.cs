@@ -1,6 +1,5 @@
 ﻿using System;
-using Freedirect.Application.Data;
-using Freedirect.Application.UserSettings;
+using Freedirect.Application.Settings;
 using Freedirect.Core;
 
 namespace Freedirect.Application

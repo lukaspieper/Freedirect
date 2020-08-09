@@ -1,0 +1,18 @@
+﻿<Page x:Class="Freedirect.Application.Views.Pages.HistoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:prism="http://prismlibrary.com/"
+      xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels.Pages"
+      mc:Ignorable="d" 
+      x:ClassModifier="internal"
+      d:DataContext="{d:DesignInstance viewModels:HistoryPageViewModel }"
+      prism:ViewModelLocator.AutoWireViewModel="True"
+      Title="HistoryPage">
+
+    <DockPanel>
+        <Button Content="Clear all" DockPanel.Dock="Top" HorizontalAlignment="Right"/>
+        <ListBox ItemsSource="{Binding History}" HorizontalAlignment="Stretch"/>
+    </DockPanel>
+</Page>
