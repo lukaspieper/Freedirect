@@ -10,8 +10,8 @@ namespace Freedirect.Application.Settings
 
         internal UserSettingsProvider()
         {
-            var localAppDataPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            var settingsDirectoryPath = Path.Combine(localAppDataPath, "Freedirect");
+            var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var settingsDirectoryPath = Path.Combine(appDataPath, "Freedirect");
             Directory.CreateDirectory(settingsDirectoryPath);
 
             _settingsFilePath = Path.Combine(settingsDirectoryPath, "Settings.json");
@@ -23,7 +23,7 @@ namespace Freedirect.Application.Settings
             }
         }
 
-        internal UserSettings UserSettings { get; private set; }
+        internal UserSettings UserSettings { get; private set; } = new UserSettings();
 
         internal void UpdateUserSettings(UserSettings settings)
         {
