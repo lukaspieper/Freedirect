@@ -5,20 +5,14 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RadioButton}">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-                        <Border Background="Transparent">
-                            <TextBlock Margin="10,2" Text="{TemplateBinding Content}" HorizontalAlignment="Center" FontSize="16" />
-                        </Border>
-                        <Rectangle x:Name="Line" Grid.Row="1" Fill="Transparent" Height="2" Margin="10,5"/>
-                    </Grid>
+                    <StackPanel Orientation="Vertical" Margin="10,0" Background="Transparent">
+                        <TextBlock Text="{TemplateBinding Content}" HorizontalAlignment="Center" FontSize="16" Margin="0,2" />
+                        <Rectangle x:Name="Line" Fill="Transparent" Height="2" Margin="0,1" />
+                    </StackPanel>
 
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="Line" Property="Fill" Value="Green"/>
+                            <Setter TargetName="Line" Property="Fill" Value="Green" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

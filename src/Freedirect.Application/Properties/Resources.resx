@@ -120,6 +120,9 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="AboutFreedirect" xml:space="preserve">
+    <value>About Freedirect</value>
+  </data>
   <data name="AppTitle" xml:space="preserve">
     <value>Freedirect</value>
   </data>
@@ -141,11 +144,17 @@
   <data name="History" xml:space="preserve">
     <value>History</value>
   </data>
+  <data name="OpenGitHubIssues" xml:space="preserve">
+    <value>Open GitHub issues</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>The idea behind Freedirect is to expand your freedom; the freedom to choose your favorite tools. You can trust Freedirect because it is open source and works without Internet permission. Your data remains on your device.</value>
+  </data>
   <data name="SearchEngine" xml:space="preserve">
     <value>Search engine</value>
-  </data>
-  <data name="SearchEngineInfo" xml:space="preserve">
-    <value>Freedirect can replace Bing in URLs processed by this application. For example, it can handle URLs coming from Cortana.</value>
   </data>
   <data name="SecondStep" xml:space="preserve">
     <value>2. Below that setting, click on the link "Choose default applications by protocol".</value>

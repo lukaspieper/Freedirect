@@ -120,6 +120,9 @@
   <data name="About" xml:space="preserve">
     <value>Über</value>
   </data>
+  <data name="AboutFreedirect" xml:space="preserve">
+    <value>Über Freedirect</value>
+  </data>
   <data name="AppTitle" xml:space="preserve">
     <value>Freedirect</value>
   </data>
@@ -127,13 +130,13 @@
     <value>Einstellungen für Standard-Apps öffnen</value>
   </data>
   <data name="DifferentSearchEngine" xml:space="preserve">
-    <value>Suchen Sie nach einer anderen Suchmaschiene? Kontaktieren Sie mich gerne.</value>
+    <value>Möchten Sie eine andere Suchmaschine verwenden? Kontaktieren Sie mich gerne.</value>
   </data>
   <data name="FavouriteSearchEngine" xml:space="preserve">
-    <value>Wählen Sie Ihre bevorzugte Suchmaschiene aus</value>
+    <value>Wählen Sie Ihre bevorzugte Suchmaschine aus</value>
   </data>
   <data name="FirstStep" xml:space="preserve">
-    <value>1. Überprüfen Sie, ob Ihr Lieblingsbrowser als Standardbrowser gesetzt ist.</value>
+    <value>1. Überprüfen Sie, ob Ihr favorisierter Browser als Standardbrowser gesetzt ist.</value>
   </data>
   <data name="FourthStep" xml:space="preserve">
     <value>4. Abschließend klicken Sie auf den Button rechts daneben und wählen "Freedirect" aus.</value>
@@ -141,11 +144,17 @@
   <data name="History" xml:space="preserve">
     <value>Verlauf</value>
   </data>
-  <data name="SearchEngine" xml:space="preserve">
-    <value>Suchmaschienen</value>
+  <data name="OpenGitHubIssues" xml:space="preserve">
+    <value>Probleme auf GitHub anzeigen</value>
   </data>
-  <data name="SearchEngineInfo" xml:space="preserve">
-    <value>Freedirect kann Bing in URLs ersetzen, die von dieser Anwendung ausgeführt werden. Zum Beispiel können URLs von Cortana angepasst werden.</value>
+  <data name="Privacy" xml:space="preserve">
+    <value>Datenschutz</value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>Die Idee hinter Freedirect ist Ihnen mehr Kontrolle zu geben; die Möglichkeit Ihre favorisierten Tools und Dienste zu verwenden. Freedirect unterstützt Sie dabei, weil diese Anwendung Open Source ist und ohne Internetberechtigung arbeitet. Alle Daten bleiben auf Ihrem Gerät.</value>
+  </data>
+  <data name="SearchEngine" xml:space="preserve">
+    <value>Suchmaschinen</value>
   </data>
   <data name="SecondStep" xml:space="preserve">
     <value>2. In den Einstellungen klicken Sie auf dann darunter auf den Link "Standard-Apps nach Protokoll auswählen".</value>

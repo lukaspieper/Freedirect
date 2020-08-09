@@ -70,6 +70,15 @@ namespace Freedirect.Application.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About Freedirect.
+        /// </summary>
+        public static string AboutFreedirect {
+            get {
+                return ResourceManager.GetString("AboutFreedirect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Freedirect.
         /// </summary>
         public static string AppTitle {
@@ -133,20 +142,38 @@ namespace Freedirect.Application.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open GitHub issues.
+        /// </summary>
+        public static string OpenGitHubIssues {
+            get {
+                return ResourceManager.GetString("OpenGitHubIssues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy.
+        /// </summary>
+        public static string Privacy {
+            get {
+                return ResourceManager.GetString("Privacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The idea behind Freedirect is to expand your freedom; the freedom to choose your favorite tools. You can trust Freedirect because it is open source and works without Internet permission. Your data remains on your device..
+        /// </summary>
+        public static string PrivacyStatement {
+            get {
+                return ResourceManager.GetString("PrivacyStatement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search engine.
         /// </summary>
         public static string SearchEngine {
             get {
                 return ResourceManager.GetString("SearchEngine", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Freedirect can replace Bing in URLs processed by this application. For example, it can handle URLs coming from Cortana..
-        /// </summary>
-        public static string SearchEngineInfo {
-            get {
-                return ResourceManager.GetString("SearchEngineInfo", resourceCulture);
             }
         }
         
