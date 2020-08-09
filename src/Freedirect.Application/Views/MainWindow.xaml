@@ -48,14 +48,14 @@
                 <Button Style="{DynamicResource MenuItemButton}" 
                         Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.HistoryPage}">
                     <StackPanel Orientation="Horizontal" Margin="10,5">
-                        <Rectangle Fill="Gray" Width="20" Height="20"/>
+                        <ContentPresenter Content="{StaticResource ShowFullHistoryIcon}" Width="18" Height="18"/>
                         <TextBlock Text="{x:Static p:Resources.History}" FontSize="15" Margin="10,0"/>
                     </StackPanel>
                 </Button>
                 <Button  Style="{DynamicResource MenuItemButton}" 
                          Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.AboutPage}">
                     <StackPanel Orientation="Horizontal" Margin="10,5">
-                        <Rectangle Fill="Gray" Width="20" Height="20"/>
+                        <ContentPresenter Content="{StaticResource StatusInformationOutlineIcon}" Width="18" Height="18"/>
                         <TextBlock Text="{x:Static p:Resources.About}" FontSize="15" Margin="10,0"/>
                     </StackPanel>
                 </Button>
