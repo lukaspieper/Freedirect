@@ -2,11 +2,13 @@
 using System.Linq;
 using Freedirect.Application.Settings;
 using Freedirect.Application.Views;
+using JetBrains.Annotations;
 using Prism.Commands;
 using Prism.Regions;
 
 namespace Freedirect.Application.ViewModels.Pages
 {
+    [UsedImplicitly]
     internal class SearchEnginesPageViewModel : ViewModelBase
     {
         private readonly IRegionManager _regionManager;

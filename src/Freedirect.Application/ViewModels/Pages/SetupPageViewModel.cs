@@ -1,12 +1,14 @@
 ﻿using System;
 using Freedirect.Core.Utilities;
+using JetBrains.Annotations;
 using Prism.Commands;
 
 namespace Freedirect.Application.ViewModels.Pages
 {
+    [UsedImplicitly]
     internal class SetupPageViewModel : ViewModelBase
     {
-        public SetupPageViewModel()
+        internal SetupPageViewModel()
         {
             OpenDefaultAppsSettingsCommand = new DelegateCommand<string>(OpenDefaultAppsSettings);
         }

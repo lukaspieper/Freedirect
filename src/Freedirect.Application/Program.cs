@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 namespace Freedirect.Application
 {
+    [UsedImplicitly]
     internal class Program
     {
         [STAThread]
