@@ -1,10 +1,12 @@
 ﻿using System.Windows.Input;
 using Freedirect.Application.Views;
+using JetBrains.Annotations;
 using Prism.Commands;
 using Prism.Regions;
 
 namespace Freedirect.Application.ViewModels
 {
+    [UsedImplicitly]
     internal class MainWindowViewModel : ViewModelBase
     {
         private readonly IRegionManager _regionManager;

@@ -20,7 +20,33 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border Background="White" Panel.ZIndex="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
+        <Popup StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
+               IsOpen="{Binding SecondaryMenuIsShown, Mode=TwoWay}"
+               PlacementTarget="{Binding ElementName=TogglePopupButton}" Placement="Left" HorizontalOffset="37" VerticalOffset="37">
+
+            <StackPanel Width="150" Background="White" Margin="8,0,0,8">
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
+                </StackPanel.Effect>
+
+                <Button Style="{DynamicResource MenuItemButton}" 
+                        Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.HistoryPage}">
+                    <StackPanel Orientation="Horizontal" Margin="10,5">
+                        <ContentPresenter Content="{StaticResource ShowFullHistoryIcon}" Width="18" Height="18"/>
+                        <TextBlock Text="{x:Static p:Resources.History}" FontSize="15" Margin="10,0"/>
+                    </StackPanel>
+                </Button>
+                <Button  Style="{DynamicResource MenuItemButton}" 
+                         Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.AboutPage}">
+                    <StackPanel Orientation="Horizontal" Margin="10,5">
+                        <ContentPresenter Content="{StaticResource StatusInformationOutlineIcon}" Width="18" Height="18"/>
+                        <TextBlock Text="{x:Static p:Resources.About}" FontSize="15" Margin="10,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Popup>
+
+        <Border Grid.Row="0" Background="White" Panel.ZIndex="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
             </Border.Effect>
@@ -35,32 +61,6 @@
                               IsChecked="{Binding SecondaryMenuIsShown, Mode=TwoWay}"/>
             </DockPanel>
         </Border>
-
-        <Popup StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
-               IsOpen="{Binding SecondaryMenuIsShown, Mode=TwoWay}"
-               PlacementTarget="{Binding ElementName=TogglePopupButton}" Placement="Left" HorizontalOffset="37" VerticalOffset="37">
-
-            <StackPanel Width="150" Background="White" Margin="8,0,0,8">
-                <StackPanel.Effect>
-                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
-                </StackPanel.Effect>
-
-                <Button Style="{DynamicResource MenuItemButton}" 
-                        Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.HistoryPage}">
-                    <StackPanel Orientation="Horizontal" Margin="10,5">
-                        <Rectangle Fill="Gray" Width="20" Height="20"/>
-                        <TextBlock Text="{x:Static p:Resources.History}" FontSize="15" Margin="10,0"/>
-                    </StackPanel>
-                </Button>
-                <Button  Style="{DynamicResource MenuItemButton}" 
-                         Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.AboutPage}">
-                    <StackPanel Orientation="Horizontal" Margin="10,5">
-                        <Rectangle Fill="Gray" Width="20" Height="20"/>
-                        <TextBlock Text="{x:Static p:Resources.About}" FontSize="15" Margin="10,0"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
-        </Popup>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15" Grid.Row="1" Background="#EDEDED">
             <Frame prism:RegionManager.RegionName="{x:Static views:NavigationNames.ContentRegion}" NavigationUIVisibility="Hidden">
