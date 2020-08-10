@@ -1,8 +1,11 @@
-﻿namespace Freedirect.Core
+﻿using System.Text.Json.Serialization;
+using JetBrains.Annotations;
+
+namespace Freedirect.Core
 {
     public class SearchEngine
     {
-        // ReSharper disable once UnusedMember.Global
+        [UsedImplicitly]
         public SearchEngine()
         {
         }
@@ -13,8 +16,12 @@
             Address = address;
         }
 
+        [UsedImplicitly]
+        [JsonPropertyName("Name")]
         public string Name { get; set; }
 
+        [UsedImplicitly]
+        [JsonPropertyName("Address")]
         public string Address { get; set; }
     }
 }

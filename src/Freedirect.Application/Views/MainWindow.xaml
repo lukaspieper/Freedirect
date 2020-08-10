@@ -20,22 +20,6 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Border Background="White" Panel.ZIndex="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
-            </Border.Effect>
-
-            <DockPanel>
-                <RadioButton Content="{x:Static p:Resources.Setup}" IsChecked="True" 
-                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
-                <RadioButton Content="{x:Static p:Resources.SearchEngine}"
-                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SearchEnginesPage}"/>
-
-                <ToggleButton x:Name="TogglePopupButton" Content="• • •" Width="37" Height="37" HorizontalAlignment="Right" 
-                              IsChecked="{Binding SecondaryMenuIsShown, Mode=TwoWay}"/>
-            </DockPanel>
-        </Border>
-
         <Popup StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
                IsOpen="{Binding SecondaryMenuIsShown, Mode=TwoWay}"
                PlacementTarget="{Binding ElementName=TogglePopupButton}" Placement="Left" HorizontalOffset="37" VerticalOffset="37">
@@ -61,6 +45,22 @@
                 </Button>
             </StackPanel>
         </Popup>
+
+        <Border Grid.Row="0" Background="White" Panel.ZIndex="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
+            </Border.Effect>
+
+            <DockPanel>
+                <RadioButton Content="{x:Static p:Resources.Setup}" IsChecked="True" 
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                <RadioButton Content="{x:Static p:Resources.SearchEngine}"
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SearchEnginesPage}"/>
+
+                <ToggleButton x:Name="TogglePopupButton" Content="• • •" Width="37" Height="37" HorizontalAlignment="Right" 
+                              IsChecked="{Binding SecondaryMenuIsShown, Mode=TwoWay}"/>
+            </DockPanel>
+        </Border>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15" Grid.Row="1" Background="#EDEDED">
             <Frame prism:RegionManager.RegionName="{x:Static views:NavigationNames.ContentRegion}" NavigationUIVisibility="Hidden">
