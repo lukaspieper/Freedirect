@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Nuke.Common;
 using Nuke.Common.CI;
 using Nuke.Common.CI.GitHubActions;
@@ -34,6 +35,18 @@ partial class Build : NukeBuild
     AbsolutePath SourceDirectory => RootDirectory / "src";
     AbsolutePath ArtifactsDirectory => RootDirectory / "artifacts";
     AbsolutePath AnalysisArtifactsDirectory => ArtifactsDirectory / "Analysis";
+
+    Target OpenReport => _ => _
+        .Executes(() =>
+        {
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = ArtifactsDirectory / "Analysis.html",
+                UseShellExecute = true,
+            };
+
+            Process.Start(processStartInfo);
+        });
 
     Target Clean => _ => _
         .Before(Restore)
