@@ -17,12 +17,12 @@ about refactoring the project to best practise. And here we go.
 
 I plan to implement the following things:
 - [x] .net Core 3.1 instead of .net Framework
-- [ ] MVVM (with Prism or MVVM Light)
+- [x] MVVM (Prism)
 - [ ] Unit Tests (xUnit)
   - [x] Run tests from build system
 - [x] Build system (Nuke.Build) with GitHub Actions
   - [ ] Improve reporting
   - [ ] Add more failure conditions
 - [ ] Finishing started (additional) features
-- [ ] Refactoring existing code
+- [x] Refactoring existing code
 - [ ] ...
