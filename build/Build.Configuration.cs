@@ -10,4 +10,8 @@ partial class Build
 
     [Parameter("Minimal value for CodeMetrics' MaintainabilityIndex. If a member is rated lower, the process fails")]
     readonly int MaintainabilityIndexMinimum = 60;
+
+    // TODO: Check if the number of warnings from the previous GitHub Actions run can be retrieved.
+    [Parameter("Maximal number of Roslyn analyzers warnings. If the number is higher, the process fails")]
+    readonly int RoslynAnalyzersWarningThreshold;
 }
