@@ -10,6 +10,7 @@
 		<AssemblyName>Freedirect</AssemblyName>
 		<ApplicationIcon>Green_Arrow.ico</ApplicationIcon>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NeutralLanguage>en</NeutralLanguage>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -9,6 +9,8 @@ namespace Freedirect.Core.Utilities
     {
         public static void Start(Uri uri)
         {
+            if (uri == null) throw new ArgumentNullException(nameof(uri));
+
             var processStartInfo = new ProcessStartInfo
             {
                 FileName = uri.AbsoluteUri,
