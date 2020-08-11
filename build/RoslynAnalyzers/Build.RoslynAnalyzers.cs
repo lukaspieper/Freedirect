@@ -6,6 +6,7 @@ using System.Xml.Serialization;
 using Nuke.Common;
 using Nuke.Common.IO;
 using Nuke.Common.Tooling;
+using static Nuke.Common.ControlFlow;
 using static Nuke.Common.Logger;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Utilities.XmlTransformation;
@@ -22,18 +23,22 @@ partial class Build
     Target GetRoslynAnalyzersResults => _ => _
         .DependsOn(Compile)
         .DependsOn(CopyStaticArtifacts)
+        .ProceedAfterFailure()
         .Executes(() =>
         {
             var analyzerResults = GetRoslynAnalyzersResultsFromBuildOutput();
 
-            // TODO: Check if the number of issues from the previous GitHubActions run can be retrieved and cause this step to fail if the value is higher
-            if (analyzerResults.Any())
-            {
-                Warn($"RoslynAnalyzers found {analyzerResults.Count} issues.");
-            }
-
             WriteResultsToXmlFile(analyzerResults);
             TransformAnalyzersResults();
+
+            if (analyzerResults.Count > RoslynAnalyzersWarningThreshold)
+            {
+                Fail($"RoslynAnalyzers found too many warnings ({analyzerResults.Count}, max. {RoslynAnalyzersWarningThreshold}).");
+            }
+            else if (analyzerResults.Count > 0)
+            {
+                Warn($"RoslynAnalyzers found {analyzerResults.Count} warnings.");
+            }
         });
 
     List<AnalyzerResult> GetRoslynAnalyzersResultsFromBuildOutput()
