@@ -12,10 +12,10 @@ namespace Freedirect.Application.ViewModels.Pages
     internal class SearchEnginesPageViewModel : ViewModelBase
     {
         private readonly IRegionManager _regionManager;
-        private readonly UserSettingsProvider _userSettingsProvider;
+        private readonly IUserSettingsProvider _userSettingsProvider;
         private string _selectedSearchEngineName;
 
-        internal SearchEnginesPageViewModel(IRegionManager regionManager, SearchEnginesProvider searchEnginesProvider, UserSettingsProvider userSettingsProvider)
+        internal SearchEnginesPageViewModel(IRegionManager regionManager, ISearchEnginesProvider searchEnginesProvider, IUserSettingsProvider userSettingsProvider)
         {
             _regionManager = regionManager;
             _userSettingsProvider = userSettingsProvider;

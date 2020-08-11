@@ -7,7 +7,7 @@ using Freedirect.Core;
 
 namespace Freedirect.Application.Settings
 {
-    internal class SearchEnginesProvider
+    internal class SearchEnginesProvider : ISearchEnginesProvider
     {
         internal SearchEnginesProvider()
         {
@@ -17,9 +17,9 @@ namespace Freedirect.Application.Settings
             SearchEngines = JsonSerializer.Deserialize<List<SearchEngine>>(json);
         }
 
-        internal List<SearchEngine> SearchEngines { get; }
+        public List<SearchEngine> SearchEngines { get; }
 
-        internal SearchEngine GetSearchEngineByName(string searchEngineName)
+        public SearchEngine GetSearchEngineByName(string searchEngineName)
         {
             return SearchEngines.FirstOrDefault(searchEngine => searchEngine.Name == searchEngineName && searchEngine.Address != null);
         }
