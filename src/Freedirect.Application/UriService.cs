@@ -6,8 +6,8 @@ namespace Freedirect.Application
 {
     internal class UriService
     {
-        private readonly UserSettingsProvider _userSettingsProvider = new UserSettingsProvider();
-        private readonly SearchEnginesProvider _searchEnginesProvider = new SearchEnginesProvider();
+        private readonly IUserSettingsProvider _userSettingsProvider = new UserSettingsProvider();
+        private readonly ISearchEnginesProvider _searchEnginesProvider = new SearchEnginesProvider();
 
         internal void TransformAndRunUri(Uri uri)
         {

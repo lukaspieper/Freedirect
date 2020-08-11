@@ -20,8 +20,8 @@ namespace Freedirect.Application
             containerRegistry.RegisterForNavigation<HistoryPage>(NavigationNames.HistoryPage);
             containerRegistry.RegisterForNavigation<AboutPage>(NavigationNames.AboutPage);
 
-            containerRegistry.RegisterSingleton<SearchEnginesProvider>();
-            containerRegistry.RegisterSingleton<UserSettingsProvider>();
+            containerRegistry.RegisterSingleton<ISearchEnginesProvider, SearchEnginesProvider>();
+            containerRegistry.RegisterSingleton<IUserSettingsProvider, UserSettingsProvider>();
         }
     }
 }

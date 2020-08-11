@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace Freedirect.Application.Settings
 {
-    internal class UserSettingsProvider
+    internal class UserSettingsProvider : IUserSettingsProvider
     {
         private readonly string _settingsFilePath;
 
@@ -23,9 +23,9 @@ namespace Freedirect.Application.Settings
             }
         }
 
-        internal UserSettings UserSettings { get; private set; } = new UserSettings();
+        public UserSettings UserSettings { get; private set; } = new UserSettings();
 
-        internal void UpdateUserSettings(UserSettings settings)
+        public void UpdateUserSettings(UserSettings settings)
         {
             var json = JsonSerializer.Serialize(settings);
             File.WriteAllText(_settingsFilePath, json);
