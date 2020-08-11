@@ -10,19 +10,9 @@ prefered one.
 
 ## About this project/repository/code ...
 
-I created this tool back in 2018. While I definitifly could have done it better at that time, I decided to just get it working.
-Honestly even from today's point of view this tool is simple and small enough that it does not need a fancy clean architecture,
-MVVM, etc. Properly it is already overengineered in some places. Nevertheless, when I decided to make it open source, I thought
-about refactoring the project to best practise. And here we go.
+I originally created this tool in 2018. Due to the idea to make the code open source, I have rewritten and refactored large parts. The following technologies and techniques are used in the current state:
 
-I plan to implement the following things:
-- [x] .net Core 3.1 instead of .net Framework
-- [x] MVVM (Prism)
-- [ ] Unit Tests (xUnit)
-  - [x] Run tests from build system
-- [x] Build system (Nuke.Build) with GitHub Actions
-  - [ ] Improve reporting
-  - [ ] Add more failure conditions
-- [ ] Finishing started (additional) features
-- [x] Refactoring existing code
-- [ ] ...
+- WPF (.net Core)
+- MVVM ([Prism](https://github.com/prismlibrary))
+- Unit Tests ([xUnit](https://github.com/xunit))
+- Build system ([Nuke](https://github.com/nuke-build/nuke) with GitHub Actions) for compiling and static source code analysis ([FxCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/), [StyleCop](https://github.com/StyleCop/StyleCop), [CodeMetrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/), [ReSharper Inspection](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DupFinder](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DotCover](https://www.nuget.org/packages/JetBrains.dotCover.CommandLineTools/))
