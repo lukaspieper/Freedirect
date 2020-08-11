@@ -13,6 +13,8 @@ namespace Freedirect.Core
 
         public void ExtractProtocol(Uri uri)
         {
+            if (uri == null) throw new ArgumentNullException(nameof(uri));
+
             var extractor = _extractorFactory.CreateCorrespondingProtocolExtractor(uri);
             _protocol = extractor?.Parse();
         }
