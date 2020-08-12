@@ -1,0 +1,75 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Core", "Freedirect.Core\Freedirect.Core.csproj", "{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Application", "Freedirect.Application\Freedirect.Application.csproj", "{B7D33A31-667D-4E0F-A446-AD56F414C380}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1} = {1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}
+	EndProjectSection
+EndProject
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "Freedirect.Packaging", "Freedirect.Packaging\Freedirect.Packaging.wapproj", "{81B790C6-16E9-4671-90F4-C512B7D1CD49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "..\build\_build.csproj", "{1B28DA6C-6CE2-4638-A7AB-0A019CD40AA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Tests", "Freedirect.Tests\Freedirect.Tests.csproj", "{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{059C6E94-24A7-4F4F-95CD-4EFFE4B02564}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Debug|x64.ActiveCfg = Debug|x64
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Debug|x64.Build.0 = Debug|x64
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Debug|x86.ActiveCfg = Debug|x86
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Debug|x86.Build.0 = Debug|x86
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Release|x64.ActiveCfg = Release|x64
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Release|x64.Build.0 = Release|x64
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Release|x86.ActiveCfg = Release|x86
+		{1EE08F93-7424-4AAD-A9E9-2C25F5E7D2D1}.Release|x86.Build.0 = Release|x86
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Debug|x64.ActiveCfg = Debug|x64
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Debug|x64.Build.0 = Debug|x64
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Debug|x86.ActiveCfg = Debug|x86
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Debug|x86.Build.0 = Debug|x86
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Release|x64.ActiveCfg = Release|x64
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Release|x64.Build.0 = Release|x64
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Release|x86.ActiveCfg = Release|x86
+		{B7D33A31-667D-4E0F-A446-AD56F414C380}.Release|x86.Build.0 = Release|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x64.ActiveCfg = Debug|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x64.Build.0 = Debug|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x64.Deploy.0 = Debug|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x86.ActiveCfg = Debug|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x86.Build.0 = Debug|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Debug|x86.Deploy.0 = Debug|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.ActiveCfg = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.Build.0 = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.Deploy.0 = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.ActiveCfg = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Build.0 = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Deploy.0 = Release|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x64.ActiveCfg = Debug|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x64.Build.0 = Debug|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.ActiveCfg = Debug|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.Build.0 = Debug|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x64.ActiveCfg = Release|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x64.Build.0 = Release|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x86.ActiveCfg = Release|x86
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1854076-304B-44A6-B37C-66D0FF6CEDBA}
+	EndGlobalSection
+EndGlobal

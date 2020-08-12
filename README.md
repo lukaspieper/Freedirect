@@ -1,1 +1,18 @@
 # Freedirect
+
+[![continuous](https://github.com/lukaspieper/Freedirect/workflows/continuous/badge.svg)](https://github.com/lukaspieper/Freedirect/actions)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/lukaspieper/Freedirect/blob/master/LICENSE)
+
+Freedirect aims to give you a little bit more control about your Windows 10 device. It redirects links targeting MS Edge to your
+default browser. For example a common use case is the search field in the tastbar. By default it will open MS Edge and use Bing
+as search engine. Freedirect does not only redirect to your default browser, it will also change the search engine to your
+prefered one.
+
+## About this project/repository/code ...
+
+I originally created this tool in 2018. Due to the idea to make the code open source, I have rewritten and refactored large parts. The following technologies and techniques are used in the current state:
+
+- WPF (.net Core)
+- MVVM ([Prism](https://github.com/prismlibrary))
+- Unit Tests ([xUnit](https://github.com/xunit))
+- Build system ([Nuke](https://github.com/nuke-build/nuke) with GitHub Actions) for compiling and static source code analysis ([FxCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/), [StyleCop](https://github.com/StyleCop/StyleCop), [CodeMetrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/), [ReSharper Inspection](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DupFinder](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DotCover](https://www.nuget.org/packages/JetBrains.dotCover.CommandLineTools/))

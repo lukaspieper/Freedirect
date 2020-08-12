@@ -1,0 +1,519 @@
+MICROSOFT SOFTWARE LICENSE TERMS
+
+MICROSOFT VISUAL STUDIO 2019 IMAGE LIBRARY
+
+These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. They apply to the software named above. The terms also apply to any Microsoft services or updates for the software, except to the extent those have different terms.
+
+If you comply with these license terms, you have the rights below.
+
+1.	INSTALLATION AND USE RIGHTS. 
+a.	General. You may use copies of the software images to develop and test your applications.
+b.	Third Party Software. The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at http://aka.ms/thirdpartynotices or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
+
+2.	DISTRIBUTABLE CODE. The software contains images that you are permitted to distribute (“Distributable Code”) in applications you develop as described in this Section.  (For this Section the term “distribution” also means deployment of your applications for third parties to access over the Internet.)
+a.	Right to Use and Distribute.
+·	Images.  You may copy and distribute images from the Image Library in applications you develop with the Visual Studio family of products.  Your use of the Images must be in accordance with the use descriptions associated with the Images. 
+·	Third Party Distribution. You may permit distributors of your applications to copy and distribute the Distributable Code as part of those applications.
+b.	Distribution Requirements. For any Distributable Code you distribute, you must
+·	add significant primary functionality to it in your applications;
+·	require distributors and external end users to agree to terms that protect the Distributable Code at least as much as this agreement; and,
+·	indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, related to the distribution or use of your applications, except to the extent that any claim is based solely on the Distributable Code.
+c.	Distribution Restrictions. You may not use Microsoft’s trademarks in your applications’ names or branding in a way that suggests your applications come from or are endorsed by Microsoft; or modify or distribute the source code of any Distributable Code so that any part of it becomes subject to an Excluded License. An Excluded License is one that requires, as a condition of use, modification or distribution, that (i) the code be disclosed or distributed in source code form; or (ii) others have the right to modify it.
+
+3.	DATA. 
+a.	Data Collection. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may opt-out of many of these scenarios, but not all, as described in the product documentation.  There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with a copy of Microsoft’s privacy statement. Our privacy statement is located at https://go.microsoft.com/fwlink/?LinkID=824704. You can learn more about data collection and use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices.
+b.	Processing of Personal Data. To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at https://docs.microsoft.com/en-us/legal/gdpr.
+
+4.	Scope of License. The software is licensed, not sold. This agreement only gives you some rights to use the software. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement. In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways. You may not
+·	work around any technical limitations in the software;
+·	reverse engineer, decompile or disassemble the software, or otherwise attempt to derive the source code for the software, except and to the extent required by third party licensing terms governing use of certain open source components that may be included in the software;
+·	remove, minimize, block or modify any notices of Microsoft or its suppliers in the software; 
+·	use the software in any way that is against the law; or
+·	share, publish, rent or lease the software, provide the software as a stand-alone offering  for others to use , or transfer the software or this agreement to any third party.
+
+5.	Export Restrictions. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit  http://aka.ms/exporting.  
+
+6.	SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
+
+7.	Entire Agreement. This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
+
+8.	Applicable Law.  If you acquired the software in the United States, Washington law applies to interpretation of and claims for breach of this agreement, and the laws of the state where you live apply to all other claims. If you acquired the software in any other country, its laws apply.
+
+9.	CONSUMER RIGHTS; REGIONAL VARIATIONS. This agreement describes certain legal rights. You may have other rights, including consumer rights, under the laws of your state or country. Separate and apart from your relationship with Microsoft, you may also have rights with respect to the party from which you acquired the software. This agreement does not change those other rights if the laws of your state or country do not permit it to do so. For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
+a.	Australia. You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
+b.	Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
+c.	Germany and Austria.
+(i)	Warranty. The software will perform substantially as described in any Microsoft materials that accompany it. However, Microsoft gives no contractual guarantee in relation to the software.
+(ii)	Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
+Subject to the foregoing clause (ii), Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence
+
+10.	Disclaimer of Warranty. THE SOFTWARE IS LICENSED “AS-IS.” YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS. TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAWS, MICROSOFT EXCLUDES THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. 
+
+11.	Limitation on and Exclusion of Remedies and Damages. YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
+This limitation applies to (a) anything related to the software, services, content (including code) on third party Internet sites, or third party applications; and (b) claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state or country may not allow the exclusion or limitation of incidental, consequential or other damages.
+
+Please note: As this software is distributed in Quebec, Canada, some of the clauses in this agreement are provided below in French.
+Remarque : Ce logiciel étant distribué au Québec, Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
+
+EXONÉRATION DE GARANTIE. Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
+
+LIMITATION DES DOMMAGES-INTÉRÊTS ET EXCLUSION DE RESPONSABILITÉ POUR LES DOMMAGES. Vous pouvez obtenir de Microsoft et de ses fournisseurs une indemnisation en cas de dommages directs uniquement à hauteur de 5,00 $ US. Vous ne pouvez prétendre à aucune indemnisation pour les autres dommages, y compris les dommages spéciaux, indirects ou accessoires et pertes de bénéfices.
+
+Cette limitation concerne:
+·    	tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers ; et
+·     les réclamations au titre de violation de contrat ou de garantie, ou au titre de responsabilité stricte, de négligence ou d’une autre faute dans la limite autorisée par la loi en vigueur.
+
+Elle s’applique également, même si Microsoft connaissait ou devrait connaître l’éventualité d’un tel dommage. Si votre pays n’autorise pas l’exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l’exclusion ci-dessus ne s’appliquera pas à votre égard.
+
+EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
+
+------------------------------------------------------------------------------
+
+JetBrains.Annotations
+NSubstitute.Analyzers.CSharp
+Nuke.Common
+Prism.Unity
+xunit
+xunit.runner.visualstudio
+
+MIT License
+
+Copyright (c) _____
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+------------------------------------------------------------------------------
+
+JetBrains.dotCover.CommandLineTools
+JetBrains.ReSharper.CommandLineTools
+
+
+JETBRAINS USER AGREEMENT
+
+Version 1.2, effective as of January 9th, 2019
+
+IMPORTANT! READ CAREFULLY:
+
+THIS IS A LEGAL AGREEMENT. BY CLICKING THE "I AGREE" (OR SIMILAR) BUTTON THAT IS PRESENTED TO YOU AT THE TIME OF YOUR FIRST USE OF THE JETBRAINS SOFTWARE, SUPPORT, OR PRODUCTS, YOU ARE BECOMING A PARTY TO THIS AGREEMENT, YOU DECLARE YOU HAVE THE LEGAL CAPACITY TO ENTER INTO SUCH AGREEMENT, AND YOU ARE CONSENTING TO BE BOUND BY ALL THE TERMS AND CONDITIONS SET FORTH BELOW.
+1. PARTIES
+
+1.1. "JetBrains" or "We" means JetBrains s.r.o., having its principal place of business at Na Hrebenech II 1718/10, Prague, 14000, Czech Republic, registered in the Commercial Register maintained by the Municipal Court of Prague, Section C, File 86211, ID. No.: 265 02 275.
+
+1.2. "User" or "You" means the individual given the right to use a Product in accordance with this Agreement. For the avoidance of doubt, User is a natural person and not a corporation, company, partnership or association, or other entity or organization.
+
+1.3. "Product Holder" means the sole proprietor or legal entity specified in the Subscription Confirmation. For legal entities, "Product Holder" includes any entity which controls, is controlled by, or is under common control with Product Holder. For the purposes of this definition, "control" means (i) the power, directly or indirectly, to direct or manage such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares or beneficial ownership of such entity.
+2. DEFINITIONS
+
+2.1. "Agreement" means this JetBrains User Agreement covering use of the Product by individual Users.
+
+2.2. "Product" means any generally available JetBrains software product identified by JetBrains as an individual developer tool, including software plugins, irrespective of whether any such software (i) may or may not be covered by Toolbox Subscription or (ii) is or is not provided perpetually and/or for free. For the avoidance of doubt, the Product is not produced to the specifications of the User nor customized through modification or personalization, and is intended for mass distribution.
+
+2.3. "Client" means a computer device used by User for running Product(s).
+
+2.4. "Product Version" means a release, update, or upgrade of a particular Product that is not identified by JetBrains as being made for the purpose of fixing software bugs.
+
+2.5. "Bug Fix Update" for a particular Product Version means a software update or release that is specifically identified by JetBrains as an update or release for the purposes of fixing software bugs in that Product Version.
+
+2.6. "Fallback Date" means the date that was 12 months prior to the date of expiration of a Toolbox Subscription.
+
+2.7. "Fallback Version" means the most recent Product Version that JetBrains had made available prior to the Fallback Date, along with any Bug Fix Updates for that Product Version. For the purpose of clarity, the "Fallback Version" does not include any Product updates or upgrades (other than Bug Fix Updates) that User may have used in the period between the Fallback Date and the date of expiration of User's Toolbox Subscription.
+
+2.8. "JetBrains Account" or "JBA" means an account at https://account.jetbrains.com created by User, having a unique name and password, through which User has access to Products in accordance with a Toolbox Subscription.
+
+2.9. "JetBrains Website" means any website that is the property of JetBrains, including but not limited to everything hosted under the top-level domains jetbrains.com, jetbrains.net, jetbrains.org, jetbrains.ru, jetbrains.team, intellij.net, kotl.in, and kotlinlang.org.
+
+2.10. "Redistributable Product" means an independent module of the Product or the Product as a whole designed to be redistributed and designated by JetBrains as "Redistributable" in its name or in its official description.
+
+2.11 "Toolbox Subscription" is a specification which may or may not accompany a Product, and which describes the subscription term, Products provided to Product Holder, subscription fees, and payment schedules issued to Product Holder. Toolbox Subscription does not apply to Redistributable Products.
+
+2.12. "Subscription Confirmation" means an email confirming Product Holder's rights to access and use Products (excl. Redistributable Products), including Toolbox Subscription plans, and the number of authorized Users.
+
+2.13. "Privacy Policy" means the JetBrains Privacy Policy available at https://www.jetbrains.com/company/privacy.html, which may be updated from time to time.
+
+2.14. "Personal Data" means any information relating to an identified or identifiable natural person.
+3. GRANT OF RIGHTS
+
+3.1. Unless the Toolbox Subscription has expired or this Agreement is terminated in accordance with Section 13, and subject to the terms and conditions specified herein, JetBrains grants You a non-exclusive and non-transferable right to use each Product covered by the Toolbox Subscription as follows:
+
+(A) You may:
+
+(i) Use any version of the Product(s) covered by the Toolbox Subscription on any number of Clients and on any operating system supported by the Product(s); and
+
+(ii) Make one backup copy of the Product(s) solely for archival/security backup purposes.
+
+(B) You may not:
+
+(i) Rent, lease, reproduce, modify, adapt, create derivative works of, distribute, sell, or transfer the Product(s);
+
+(ii) Provide access to the Product(s) or Your JetBrains Account or right to use the Product(s) to a third party;
+
+(iii) Reverse-engineer, decompile, disassemble, modify, translate, or make any attempt to discover the source code of, the Product(s); or
+
+(iv) Remove or obscure any proprietary or other notices contained in the Product(s).
+
+3.2. Unless this Agreement is terminated in accordance with Section 13, and subject to the terms and conditions specified herein, JetBrains grants You a non-exclusive and non-transferable right to use each Product not covered by the Toolbox Subscription as follows:
+
+(A) You may:
+
+(i) Use any version of the Product not covered by the Toolbox Subscription on any number of Clients and on any operating system supported by the Product; and
+
+(ii) Make one backup copy of the Product solely for archival/security backup purposes.
+
+(B) You may not:
+
+(i) Rent, lease, reproduce, modify, adapt, create derivative works of, distribute, sell, or transfer the Product;
+
+(ii) Provide access to the Product or Your JetBrains Account or right to use the Product to a third party;
+
+(iii) Reverse-engineer, decompile, disassemble, modify, translate, or make any attempt to discover the source code of, the Product; or
+
+(iv) Remove or obscure any proprietary or other notices contained in the Product.
+
+3.3. Following the expiration of this Agreement, you may be granted access to the Fallback Version of a Product covered by the Toolbox Subscription of the Product Holder. In that case, the rights stipulated in Section 3.1(A) shall continue on a perpetual, royalty-free, non-exclusive, and non-transferable basis for the continued use of a Fallback Version of each Product covered by the Toolbox Subscription. The limitations set forth in Section 3.1(B) of this Agreement apply to the usage of the Fallback Version, as shall Section 13.5. The rights granted in this Section 3.3 are expressly contingent upon User not being in breach of this Agreement.
+
+3.4. This Agreement covers Products not covered by the Toolbox Subscription only if such Products are not covered by their own specific agreements or terms of use.
+
+3.5. If an independent module of the Product or the Product as a whole is a Redistributable Product, the following provisions shall apply in addition to Sections 3.1-3.4:
+
+(A) You may:
+
+(i) use the Redistributable Product without quantitative restrictions unless specified otherwise in the terms relating to the use of the particular Redistributable Product;
+
+(ii) transfer, reproduce, redistribute and provide access to the Redistributable Product to a third party;
+
+(iii) sell your product containing or using the Redistributable Product to a third party, but not the Redistributable Product as such;
+
+(iv) redistribute the Redistributable Product onto another Client for legitimate purposes in accordance with applicable law and use the Redistributable Product on that Client, provided that You have received authorization from the owner of such Client to deploy and use the Redistributable Product in this way. You will indemnify JetBrains against any loss, costs or damages arising from Your deployment of the Redistributable Product onto another Client in violation of this clause.
+
+(B) You hereby agree to ensure that the use of any Redistributable Product you reproduce, redistribute or provide access to, to a third party is governed by an agreement concluded between the relevant third party as a User and JetBrains and that such third party is bound by the agreement prior to the use of any such Redistributable Product. JetBrains is the exclusive owner and exclusive licensor of any Redistributable Product. You acknowledge that you are liable to JetBrains for any loss or damages in connection with the breach of this section.
+4. DECOMPILING RESTRICTIONS
+
+Some of the Products may include decompiling functionality that enables reproducing source code from the original binary code. You acknowledge that binary code and source code may be protected by copyright and trademark laws. Before using such Products for decompilation purposes, You hereby agree to make sure that decompilation of binary code is not prohibited by the applicable license agreement or that You have obtained permission to decompile the binary code from the copyright owner. Using the Products is entirely optional. JetBrains neither encourages nor condones the use of the Products for decompiling purposes, and disclaims any liability for their use by User in violation of applicable laws.
+5. RELATED TERMS
+
+Due to the nature of the Products provided, usage of the Products is governed by this Agreement, the JetBrains Website Terms of Use available at https://www.jetbrains.com/company/useterms.html, and the Purchase Terms available at https://www.jetbrains.com/store/terms/.
+6. ACCESS TO PRODUCTS
+
+6.1. Users may use the JBA in accordance with its documentation. Product Holder and its Users are solely responsible for the accuracy and completeness of any information provided via and any action taken through the JBA.
+
+6.2. You may use Your JetBrains Account credentials in the Product(s) so that We can verify Your rights to use the Product(s) online.
+
+6.3. Alternatively, You may use an offline activation code that You can download in Your JetBrains Account. If you use this option, it is Your responsibility to download a new activation code and apply it to the Product registration screen every time you make changes to a Toolbox Subscription or whenever a Toolbox Subscription is renewed.
+
+6.4. You acknowledge that the Product(s) may periodically connect to JetBrains servers to update this information, including changes to JetBrains Account credentials, offline activation codes, Toolbox Subscription plans, and payments made.
+
+6.5. All deliveries under this Agreement will be electronic. You must have an Internet connection in order to access Your JetBrains Account and to receive any deliveries. For the avoidance of doubt, You are responsible for Product download and installation.
+7. PERSONAL DATA
+
+7.1. In connection with Your use of Product(s), We and our associated companies will process Personal Data of You as a User and the Product Holder (if appropriate), in particular, Your contact and identification details, data about usage of our software and services, and information about Your subscription and payments, for the following purposes:
+
+7.1.1. To provide You with software, services or information;
+
+7.1.2. To protect Us from piracy and unlawful use of Our software or services;
+
+7.1.3. To improve Our offerings based on usage;
+
+7.1.4. For Our internal records and to protect Our rights and interests and those of other users;
+
+7.1.5. To promote and market Our software and services; and
+
+7.1.6. To fulfil legal duties stipulated by accounting, taxation, and other laws.
+
+You may object to the processing of Your Personal Data for the purposes of 7.1.2 through 7.1.5 at any time. More detailed information about Personal Data processing for the above mentioned purposes and about Your rights can be found in the Privacy Policy.
+
+7.2. For the above purposes, JetBrains may collect, among other things, your IP address, JetBrains Account username, JetBrains Account password, first name, last name, email address, and subscription information.
+
+7.3. On installation and execution, the Product may send JetBrains certain information, which will not contain any Personal Data, including Product version, Product edition, and information about the operating system and/or environment where the Product is installed, applicable to tools such as ReSharper™, which is a plugin to Visual Studio™. A unique, randomly-generated ID, which does not contain any Personal Data, is also used to distinguish instances. The Product can also check for available updates, as well as available updates for plugins or components. In addition, it can check for subscription validation, by either using the subscription key or your JetBrains Account details. Some Products can also use subscription information to inform you of the availability of applicable updates.
+
+7.4. If you opt in to anonymous data collection through the Product, the Product may electronically send anonymous information to JetBrains related to your usage of the Product features. This information may include, but is not limited to, frameworks, file templates being used in the IDEs, actions invoked, and other interactions with Product features. This information will contain neither source code nor your Personal Data, nor information about your JetBrains Account or subscription information.
+
+7.5. JetBrains is not responsible for any processing of Personal Data accidentally sent to JetBrains by the User.
+
+7.6. You shall keep your Personal Data up-to-date, update the information, or if any inconsistencies arise report such inconsistencies to JetBrains.
+8. FEEDBACK
+
+You have no obligation to provide Us with ideas, suggestions, or proposals ("Feedback"). However, if You submit Feedback to us, then You grant Us a non-exclusive, worldwide, royalty-free license that is sub-licensable and transferable, to make, use, sell, have made, offer to sell, import, reproduce, publicly display, distribute, modify, or publicly perform the Feedback in any manner without any obligation, royalty, or restriction based on intellectual property rights or otherwise.
+9. THIRD-PARTY SOFTWARE
+
+9.1. Products include code and libraries licensed to Us by third parties, including open source software ("Third-Party Software"). A list of Third-Party Software included in each Product is available in the Product documentation. All Third-Party Software is provided to You under the respective terms stipulated in the Product documentation.
+
+9.2. JETBRAINS PROVIDES NO WARRANTY, EXPRESS OR IMPLIED, WITH RESPECT TO ANY THIRD-PARTY SOFTWARE, AND EXPRESSLY DISCLAIMS ANY WARRANTY OR CONDITION OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+10. TOOLBOX SUBSCRIPTION TRIAL
+
+10.1. Subject to the terms of this Agreement, User is granted a one-time right to install and use a Product covered by the Toolbox Subscription for evaluation purposes without charge for a period of thirty (30) days from the date of such Product installation, unless otherwise specified (the "Evaluation Period"). User's use of a Product during the Evaluation Period shall be limited to the evaluation of the Product for the sole purpose of determining whether the Product meets User's requirements and whether User desires to continue using the Product.
+
+10.2. User may withdraw from using a Product at User's sole discretion anytime before expiration of the Evaluation Period. Upon expiration of the Evaluation Period, User's right to continue to use the Product will terminate, unless User purchases a Toolbox Subscription to the Product. Each Product contains a feature that will automatically disable the Product upon expiration of the Evaluation Period.
+
+10.3. Limitations contained in this Section 10 do not apply to the use of Redistributable Products, which may be used for the term of this Agreement.
+11. WARRANTY LIMITATIONS
+
+11.1 ALL PRODUCTS ARE PROVIDED TO YOU ON AN "AS IS" AND "AS AVAILABLE" BASIS. USE OF THE PRODUCTS IS AT YOUR OWN RISK.
+
+11.2 JETBRAINS MAKES NO WARRANTY AS TO THE PRODUCTS' USE OR PERFORMANCE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, JETBRAINS (OR ITS AFFILIATES, SHAREHOLDERS, AGENTS, DIRECTORS, AND EMPLOYEES), ITS LICENSORS, SUPPLIERS (WHICH SHALL INCLUDE THE PROVIDERS OF THIRD PARTY SOFTWARE), AND RESELLERS (COLLECTIVELY HEREUNDER, "JETBRAINS PARTIES") DISCLAIM ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS OR IMPLIED (INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY; FITNESS FOR A PARTICULAR PURPOSE; TITLE; AND NON-INFRINGEMENT) WITH REGARD TO THE PRODUCTS AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, JETBRAINS PARTIES DO NOT REPRESENT OR WARRANT THAT THE PRODUCTS: (A) ARE ACCURATE, RELIABLE OR CORRECT; (B) WILL MEET YOUR REQUIREMENTS; (C) WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION, UNINTERRUPTED OR SECURE; (D) ARE FREE OF DEFECTS OR ERRORS AND THAT ANY, IF FOUND, WILL BE CORRECTED; AND/OR (E) ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+
+11.3 ANY CONTENT OR DATA DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE PRODUCTS ARE DOWNLOADED AT YOUR OWN RISK; YOU AGREE YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR PROPERTY OR LOSS OF DATA THAT RESULTS FROM SUCH DOWNLOAD.
+
+11.4 YOU MAY HAVE OTHER RIGHTS, WHICH VARY FROM JURISDICTION TO JURISDICTION. THIS DOCUMENT IS NOT INTENDED TO ABROGATE SUCH RIGHTS.
+12. DISCLAIMER OF DAMAGES
+
+12.1. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE JETBRAINS PARTIES BE LIABLE TO YOU, YOUR AFFILIATES, USERS, OR ANYONE ELSE FOR: (A) ANY LOSS OF USE, DATA, GOODWILL, OR PROFITS, WHETHER OR NOT FORESEEABLE; (B) ANY LOSS OR DAMAGES IN CONNECTION WITH TERMINATION OR SUSPENSION OF YOUR ACCESS TO THE PRODUCTS IN ACCORDANCE WITH THIS AGREEMENT; OR (C) ANY SPECIAL, INCIDENTAL, INDIRECT, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES WHATSOEVER (EVEN IF THE RELEVANT JETBRAINS PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF THESE DAMAGES), INCLUDING THOSE (X) RESULTING FROM LOSS OF USE, DATA, OR PROFITS, WHETHER OR NOT FORESEEABLE, (Y) BASED ON ANY THEORY OF LIABILITY, INCLUDING BREACH OF CONTRACT OR WARRANTY, STRICT LIABILITY, NEGLIGENCE OR OTHER TORTIOUS ACTION, OR (Z) ARISING FROM ANY OTHER CLAIM ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR ACCESS TO THE PRODUCTS OR SUPPORT. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.
+
+12.2. THE JETBRAINS PARTIES' TOTAL LIABILITY IN ANY MATTER ARISING OUT OF OR IN RELATION TO THIS AGREEMENT IS LIMITED TO FIVE (5) US DOLLARS. THIS LIMITATION WILL APPLY EVEN IF THE JETBRAINS PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF LIABILITY EXCEEDING SUCH AN AMOUNT AND NOTWITHSTANDING ANY FAILURE OF THE ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
+13. TERM AND TERMINATION
+
+13.1. The term of this Agreement will commence upon the acceptance of this Agreement by User as set forth in the preamble above, and will continue for each Product covered by a Toolbox Subscription through the end of the applicable subscription period specified in the respective Subscription Confirmation, or indefinitely for Products not covered by a Toolbox Subscription, or in the case of Redistributable Products until terminated by either User or JetBrains.
+
+13.2. You may terminate this Agreement at any time via Your JetBrains Account. If such termination occurs during a then-current subscription period, this Agreement will continue to be effective until the end of that subscription period. In the case of Redistributable Products, User may terminate this Agreement with immediate effect by notifying JetBrains of such termination, discontinuing use of the Redistributable Product and deleting all copies of the Redistributable Product from its Clients and archives.
+
+13.3. JetBrains may terminate this agreement if:
+
+(A) User has materially breached this Agreement and fails to cure such breach within thirty (30) days of written notice thereof;
+
+(B) JetBrains is required to do so by law (for example, where the provision of Products to User is, or becomes, unlawful); or
+
+(C) JetBrains elects to discontinue providing Product(s), in whole or in part.
+
+13.4. JetBrains will make reasonable efforts to notify User via email as follows:
+
+(A) Thirty (30) days prior to termination of the Agreement in the event specified in Section 13.3(C) above.
+
+(B) Three (3) days prior to termination of the Agreement in the event specified in Section 13.3(B).
+
+13.5. Upon expiration or termination of this Agreement by User under Section 13.2, and if User elects to use the Fallback Version subject to Section 3.3 of the Agreement, Sections 3.3, 8, 9, 11 and 12 of this Agreement will survive.
+14. TEMPORARY SUSPENSION FOR NON-PAYMENT
+
+14.1. JetBrains reserves the right to suspend User's access to JetBrains Products if Product Holder fails to pay its subscription, where applicable.
+
+14.2. If JetBrains suspends User's access to JetBrains Products for non-payment according to Section 14.1., Product Holder must pay all past due amounts in order to restore its and its Users' access to JetBrains Products.
+15. EXPORT REGULATIONS
+
+User shall comply with all applicable laws and regulations with regards to economic sanctions, export controls, import regulations, and trade embargoes (all herein referred to as "Sanctions"), including those of the European Union and United States (specifically the Export Administration Regulations (EAR)). User declares that it is not a person targeted by Sanctions nor is it otherwise owned or controlled by or acting on behalf of any person targeted by Sanctions. Further, User warrants that it will not download or otherwise export or re-export the JetBrains Toolbox or any related technical data directly or indirectly to any person targeted by Sanctions or download or otherwise use the JetBrains Toolbox for any end-use prohibited or restricted by Sanctions.
+16. GENERAL
+
+16.1. Entire Agreement. This Agreement, together with the JetBrains Website Agreement available at https://www.jetbrains.com/company/useterms.html, the Purchase Terms available at https://www.jetbrains.com/store/terms/, and the Privacy Policy, constitutes the entire agreement between the parties concerning its subject matter and supersedes any prior agreements between You and JetBrains regarding Your use of the Products. No purchase order, other ordering document or any handwritten or typewritten text which purports to modify or supplement the printed text of this Agreement or any schedule will add to or vary the terms of this Agreement unless signed by both User and JetBrains.
+
+16.2. Reservation of Rights. JetBrains reserves the right at any time to cease the provision of Products and to alter prices, features, specifications, capabilities, functions, terms of use, release dates, general availability, or other characteristics of Products.
+
+16.3. Changes to this Agreement. We may update or modify this Agreement from time to time, including any referenced policies and other documents. If a revision meaningfully reduces Your rights, We will use reasonable efforts to notify You (for example, by contacting You at the email address You have provided to us, by posting on JetBrains Website, or via the Product itself). If We modify this Agreement, the modified version of the Agreement will be effective from the start of the next Toolbox Subscription term. In this case, if You object to the updated Agreement terms, as Your exclusive remedy, You may terminate this agreement. You may be required to click through the updated Agreement to show Your acceptance. For the avoidance of doubt, any Subscription Confirmation is subject to the version of the Agreement in effect on the Subscription Confirmation date.
+
+16.4. Severability. If a particular term of this Agreement is not enforceable, the unenforceability of that term will not affect any other terms of this Agreement.
+
+16.5. Headings. Headings and titles are for convenience only and do not affect the interpretation of this Agreement.
+
+16.6. No Waiver. Our failure to enforce or exercise any part of this Agreement is not a waiver of that section.
+
+16.7. Governing Law. This Agreement will be governed by the laws of the Czech Republic, without regard to conflict of laws principles. User agrees that any litigation relating to this Agreement may only be brought in, and will be subject to the jurisdiction of, any competent court of the Czech Republic. The parties agree that the United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.
+
+16.8. You declare that You have had sufficient opportunity to review this Agreement, understand the content of all of its clauses, negotiate its terms, and seek independent professional legal advice in that respect before entering into it. Consequently, any statutory "form contract" ("adhesion contract") regulations shall not be applicable to this Agreement.
+
+16.9. The parties to this Agreement undertake to make their best efforts to settle any disputes arising hereunder ("Dispute") amicably. Should the parties to this Agreement fail to settle a Dispute amicably, User has the right to submit a Dispute for an out-of-court resolution to the Czech Trade Inspection Authority, web address: www.coi.cz.
+
+16.10. Notice. JetBrains may deliver any notice to User via electronic mail to an email address provided by User, JetBrains Account, registered mail, personal delivery, or a renowned express courier (such as DHL, FedEx, or UPS). Any such notice will be deemed to be effective (i) on the day the notice is sent to User via email, (ii) upon being uploaded to Your JetBrains Account (irrespective of when User actually receives it), (iii) upon personal delivery, (iv) one (1) day after deposit with an express courier, (v) or five (5) days after deposit in the mail, whichever occurs first.
+
+16.11. Children and minors. If You are under 18 years old, then by entering into this Agreement you explicitly stipulate, that (i) You have legal capacity to conclude this Agreement or that you have valid consent from a parent or legal guardian to do so and (ii) You understand JetBrains Privacy Policy available at: https://www.jetbrains.com/company/privacy.html. You may not enter into this Agreement if you are under 13 years old. IF YOU DO NOT UNDERSTAND THIS SECTION, DO NOT UNDERSTAND THE JETBRAINS PRIVACY POLICY, OR DO NOT KNOW WHETHER YOU HAVE THE LEGAL CAPACITY TO ACCEPT THESE TERMS, PLEASE ASK YOUR PARENT OR LEGAL GUARDIAN FOR HELP.
+
+For exceptions or modifications to this Agreement, please contact JetBrains at:
+
+Address: Na Hrebenech II 1718/10, Prague, 14000, Czech Republic
+
+Fax: +420 241 722 540
+
+Email: legal@jetbrains.com
+
+------------------------------------------------------------------------------
+
+Microsoft.CodeAnalysis.FxCopAnalyzers
+Microsoft.CodeAnalysis.Metrics
+StyleCop.Analyzers
+
+ Apache License
+
+Version 2.0, January 2004
+
+http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      
+
+      "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+
+      
+
+      "Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+
+      
+
+      "Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+
+      
+
+      "You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
+
+      
+
+      "Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+
+      
+
+      "Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+
+      
+
+      "Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+
+      
+
+      "Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+
+      
+
+      "Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."
+
+      
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+
+      (a) You must give any other recipients of the Work or Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability. END OF TERMS AND CONDITIONS
+
+APPENDIX: How to apply the Apache License to your work.
+
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own identifying information. (Don't include the brackets!) The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same "printed page" as the copyright notice for easier identification within third-party archives.
+
+Copyright _____
+
+Licensed under the Apache License, Version 2.0 (the "License");
+
+you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+
+distributed under the License is distributed on an "AS IS" BASIS,
+
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and
+
+limitations under the License.
+
+------------------------------------------------------------------------------
+
+Microsoft.NET.Test.Sdk
+
+MICROSOFT SOFTWARE LICENSE TERMS
+
+MICROSOFT .NET LIBRARY
+
+These license terms are an agreement between you and Microsoft Corporation (or based on where you live, one of its affiliates). They apply to the software named above. The terms also apply to any Microsoft services or updates for the software, except to the extent those have different terms.
+
+If you comply with these license terms, you have the rights below.
+1.    INSTALLATION AND USE RIGHTS.
+
+You may install and use any number of copies of the software to develop and test your applications. 
+2.    THIRD PARTY COMPONENTS. The software may include third party components with separate legal notices or governed by other agreements, as may be described in the ThirdPartyNotices file(s) accompanying the software.
+3.    ADDITIONAL LICENSING REQUIREMENTS AND/OR USE RIGHTS.
+a.     DISTRIBUTABLE CODE.  The software is comprised of Distributable Code. “Distributable Code” is code that you are permitted to distribute in applications you develop if you comply with the terms below.
+i.      Right to Use and Distribute.
+
+·        You may copy and distribute the object code form of the software.
+
+·        Third Party Distribution. You may permit distributors of your applications to copy and distribute the Distributable Code as part of those applications.
+ii.     Distribution Requirements. For any Distributable Code you distribute, you must
+
+·        use the Distributable Code in your applications and not as a standalone distribution;
+
+·        require distributors and external end users to agree to terms that protect it at least as much as this agreement; and
+
+·        indemnify, defend, and hold harmless Microsoft from any claims, including attorneys’ fees, related to the distribution or use of your applications, except to the extent that any claim is based solely on the unmodified Distributable Code.
+iii.   Distribution Restrictions. You may not
+
+·        use Microsoft’s trademarks in your applications’ names or in a way that suggests your applications come from or are endorsed by Microsoft; or
+
+·        modify or distribute the source code of any Distributable Code so that any part of it becomes subject to an Excluded License. An “Excluded License” is one that requires, as a condition of use, modification or distribution of code, that (i) it be disclosed or distributed in source code form; or (ii) others have the right to modify it.
+4.    DATA.
+a.     Data Collection. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to provide services and improve our products and services.  You may opt-out of many of these scenarios, but not all, as described in the software documentation.  There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with Microsoft’s privacy statement. Our privacy statement is located at https://go.microsoft.com/fwlink/?LinkID=824704. You can learn more about data collection and its use from the software documentation and our privacy statement. Your use of the software operates as your consent to these practices.
+b.    Processing of Personal Data. To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at https://docs.microsoft.com/en-us/legal/gdpr.
+5.    Scope of License. The software is licensed, not sold. This agreement only gives you some rights to use the software. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you may use the software only as expressly permitted in this agreement. In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways. You may not
+
+·        work around any technical limitations in the software;
+
+·        reverse engineer, decompile or disassemble the software, or otherwise attempt to derive the source code for the software, except and to the extent required by third party licensing terms governing use of certain open source components that may be included in the software;
+
+·        remove, minimize, block or modify any notices of Microsoft or its suppliers in the software;
+
+·        use the software in any way that is against the law; or
+
+·        share, publish, rent or lease the software, provide the software as a stand-alone offering for others to use, or transfer the software or this agreement to any third party.
+6.    Export Restrictions. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit www.microsoft.com/exporting.  
+7.    SUPPORT SERVICES. Because this software is “as is,” we may not provide support services for it.
+8.    Entire Agreement. This agreement, and the terms for supplements, updates, Internet-based services and support services that you use, are the entire agreement for the software and support services.
+9.    Applicable Law.  If you acquired the software in the United States, Washington law applies to interpretation of and claims for breach of this agreement, and the laws of the state where you live apply to all other claims. If you acquired the software in any other country, its laws apply.
+10. CONSUMER RIGHTS; REGIONAL VARIATIONS. This agreement describes certain legal rights. You may have other rights, including consumer rights, under the laws of your state or country. Separate and apart from your relationship with Microsoft, you may also have rights with respect to the party from which you acquired the software. This agreement does not change those other rights if the laws of your state or country do not permit it to do so. For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
+a)    Australia. You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
+b)    Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
+c)    Germany and Austria.
+
+(i)        Warranty. The software will perform substantially as described in any Microsoft materials that accompany it. However, Microsoft gives no contractual guarantee in relation to the software.
+
+(ii)       Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
+Subject to the foregoing clause (ii), Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence
+11. Disclaimer of Warranty. THE SOFTWARE IS LICENSED “AS-IS.” YOU BEAR THE RISK OF USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS. TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAWS, MICROSOFT EXCLUDES THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+12. Limitation on and Exclusion of Remedies and Damages. YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
+
+This limitation applies to (a) anything related to the software, services, content (including code) on third party Internet sites, or third party applications; and (b) claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+
+It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state or country may not allow the exclusion or limitation of incidental, consequential or other damages.
+
+------------------------------------------------------------------------------
+
+NSubstitute
+
+BSD-3-Clause
+
+Copyright (c) _____ . All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+   3. _____ be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY _____ "AS IS" AND ANY _____ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL _____ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 

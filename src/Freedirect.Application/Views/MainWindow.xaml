@@ -1,0 +1,76 @@
+﻿<Window x:Class="Freedirect.Application.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p="clr-namespace:Freedirect.Application.Properties"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:views="clr-namespace:Freedirect.Application.Views"
+        xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels"
+        mc:Ignorable="d"
+        x:ClassModifier="internal"
+        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel }"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{x:Static p:Resources.AppTitle}" Height="400" Width="700" MinHeight="350" MinWidth="500">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Popup StaysOpen="False" PopupAnimation="Slide" AllowsTransparency="True" Panel.ZIndex="1"
+               IsOpen="{Binding SecondaryMenuIsShown, Mode=TwoWay}"
+               PlacementTarget="{Binding ElementName=TogglePopupButton}" Placement="Left" HorizontalOffset="37" VerticalOffset="37">
+
+            <StackPanel Width="150" Background="White" Margin="8,0,0,8">
+                <StackPanel.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
+                </StackPanel.Effect>
+
+                <Button Style="{DynamicResource MenuItemButton}" 
+                        Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.HistoryPage}">
+                    <StackPanel Orientation="Horizontal" Margin="10,5">
+                        <ContentPresenter Content="{StaticResource ShowFullHistoryIcon}" Width="18" Height="18"/>
+                        <TextBlock Text="{x:Static p:Resources.History}" FontSize="15" Margin="10,0"/>
+                    </StackPanel>
+                </Button>
+                <Button  Style="{DynamicResource MenuItemButton}" 
+                         Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.AboutPage}">
+                    <StackPanel Orientation="Horizontal" Margin="10,5">
+                        <ContentPresenter Content="{StaticResource StatusInformationOutlineIcon}" Width="18" Height="18"/>
+                        <TextBlock Text="{x:Static p:Resources.About}" FontSize="15" Margin="10,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Popup>
+
+        <Border Grid.Row="0" Background="White" Panel.ZIndex="1" BorderThickness="0,0,0,1" BorderBrush="Gray">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Gray" />
+            </Border.Effect>
+
+            <DockPanel>
+                <RadioButton Content="{x:Static p:Resources.Setup}" IsChecked="True" 
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                <RadioButton Content="{x:Static p:Resources.SearchEngine}"
+                             Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SearchEnginesPage}"/>
+
+                <ToggleButton x:Name="TogglePopupButton" Content="• • •" Width="37" Height="37" HorizontalAlignment="Right" 
+                              IsChecked="{Binding SecondaryMenuIsShown, Mode=TwoWay}"/>
+            </DockPanel>
+        </Border>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15" Grid.Row="1" Background="#EDEDED">
+            <Frame prism:RegionManager.RegionName="{x:Static views:NavigationNames.ContentRegion}" NavigationUIVisibility="Hidden">
+                <!-- Navigating to SetupPage on application startup -->
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Loaded">
+                        <i:InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Frame>
+        </ScrollViewer>
+    </Grid>
+</Window>
