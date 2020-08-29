@@ -15,4 +15,4 @@ I originally created this tool in 2018. Due to the idea to make the code open so
 - WPF (.net Core)
 - MVVM ([Prism](https://github.com/prismlibrary))
 - Unit Tests ([xUnit](https://github.com/xunit))
-- Build system ([Nuke](https://github.com/nuke-build/nuke) with GitHub Actions) for compiling and static source code analysis ([FxCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/), [StyleCop](https://github.com/StyleCop/StyleCop), [CodeMetrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/), [ReSharper Inspection](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DupFinder](https://www.nuget.org/packages/JetBrains.ReSharper.CommandLineTools/), [JetBrains DotCover](https://www.nuget.org/packages/JetBrains.dotCover.CommandLineTools/))
+- [My personal build system](https://github.com/lukaspieper/dotnet-build-system)
