@@ -16,7 +16,7 @@ updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     reviewers:
       - "lukaspieper"
     assignees:
