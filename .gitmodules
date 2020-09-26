@@ -1,3 +1,4 @@
 [submodule "build"]
 	path = build
 	url = https://github.com/lukaspieper/dotnet-build-system.git
+	branch = master
