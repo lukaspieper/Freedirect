@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:p="clr-namespace:Freedirect.Application.Properties"
-        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:prism="http://prismlibrary.com/"
         xmlns:views="clr-namespace:Freedirect.Application.Views"
         xmlns:viewModels="clr-namespace:Freedirect.Application.ViewModels"
@@ -65,11 +65,11 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="15" Grid.Row="1" Background="#EDEDED">
             <Frame prism:RegionManager.RegionName="{x:Static views:NavigationNames.ContentRegion}" NavigationUIVisibility="Hidden">
                 <!-- Navigating to SetupPage on application startup -->
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="Loaded">
-                        <i:InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
+                <b:Interaction.Triggers>
+                    <b:EventTrigger EventName="Loaded">
+                        <prism:InvokeCommandAction Command="{Binding NavigateCommand}" CommandParameter="{x:Static views:NavigationNames.SetupPage}"/>
+                    </b:EventTrigger>
+                </b:Interaction.Triggers>
             </Frame>
         </ScrollViewer>
     </Grid>
