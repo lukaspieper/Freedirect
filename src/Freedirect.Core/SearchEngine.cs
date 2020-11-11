@@ -1,27 +1,18 @@
 ﻿using System.Text.Json.Serialization;
-using JetBrains.Annotations;
 
 namespace Freedirect.Core
 {
     public class SearchEngine
     {
-        [UsedImplicitly]
-        public SearchEngine()
-        {
-        }
-
+        [JsonConstructor]
         public SearchEngine(string name, string address)
         {
             Name = name;
             Address = address;
         }
 
-        [UsedImplicitly]
-        [JsonPropertyName("Name")]
-        public string Name { get; set; }
+        public string Name { get; init; }
 
-        [UsedImplicitly]
-        [JsonPropertyName("Address")]
-        public string Address { get; set; }
+        public string Address { get; init; }
     }
 }

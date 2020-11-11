@@ -13,7 +13,7 @@ namespace Freedirect.Core.ProtocolExtractor
             _uri = uri;
         }
 
-        public IProtocol Parse()
+        public IProtocol? Parse()
         {
             var url = IsUrlInQuery() ? ParseUrlFromQuery() : new Uri(_uri.LocalPath);
 
@@ -25,7 +25,7 @@ namespace Freedirect.Core.ProtocolExtractor
             return string.IsNullOrWhiteSpace(_uri.LocalPath) && !string.IsNullOrWhiteSpace(_uri.Query);
         }
 
-        private Uri ParseUrlFromQuery()
+        private Uri? ParseUrlFromQuery()
         {
             var urlPart = _uri.Query.Split('&')
                 .FirstOrDefault(part => part.StartsWith("url=", StringComparison.OrdinalIgnoreCase));

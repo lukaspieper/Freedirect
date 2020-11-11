@@ -10,7 +10,7 @@ namespace Freedirect.Core.ProtocolTransformer
         private readonly UriProtocol _protocol;
         private readonly SearchEngine _searchEngine;
 
-        internal SearchEngineTransformer(UriProtocol protocol, SearchEngine searchEngine)
+        internal SearchEngineTransformer(UriProtocol protocol, SearchEngine? searchEngine)
         {
             _protocol = protocol;
             _searchEngine = searchEngine ?? new SearchEngine("Bing", "https://www.bing.com/search?q=");

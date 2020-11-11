@@ -4,6 +4,6 @@ namespace Freedirect.Core.ProtocolExtractor
 {
     internal interface IProtocolExtractor
     {
-        IProtocol Parse();
+        IProtocol? Parse();
     }
 }
