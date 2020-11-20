@@ -9,7 +9,7 @@ namespace Freedirect.Core
     {
         private readonly ProtocolExtractorFactory _extractorFactory = new ProtocolExtractorFactory();
         private readonly ProtocolTransformerFactory _transformerFactory = new ProtocolTransformerFactory();
-        private IProtocol _protocol;
+        private IProtocol? _protocol;
 
         public void ExtractProtocol(Uri uri)
         {
@@ -21,6 +21,8 @@ namespace Freedirect.Core
 
         public void TransformProtocol(SearchEngine searchEngine)
         {
+            if (_protocol == null) return;
+
             var transformer = _transformerFactory.CreateCorrespondingProtocolTransformer(_protocol, searchEngine);
             _protocol = transformer?.Transform();
         }

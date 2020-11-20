@@ -1,27 +1,11 @@
-﻿using System.Text.Json.Serialization;
-using JetBrains.Annotations;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
 
 namespace Freedirect.Core
 {
-    public class SearchEngine
-    {
-        [UsedImplicitly]
-        public SearchEngine()
-        {
-        }
-
-        public SearchEngine(string name, string address)
-        {
-            Name = name;
-            Address = address;
-        }
-
-        [UsedImplicitly]
-        [JsonPropertyName("Name")]
-        public string Name { get; set; }
-
-        [UsedImplicitly]
-        [JsonPropertyName("Address")]
-        public string Address { get; set; }
-    }
+    [SuppressMessage("StyleCop.CSharp.NamingRules", "SA1313:Parameter names should begin with lower-case letter", Justification = "Does not apply to records.")]
+    [SuppressMessage("Usage", "CA1801:Review unused parameters", Justification = "Does not apply to records.")]
+    public record SearchEngine(
+        [property: JsonPropertyName("Name")] string Name,
+        [property: JsonPropertyName("Address")] string Address);
 }

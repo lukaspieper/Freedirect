@@ -17,9 +17,12 @@ namespace Freedirect.Application
 
             var searchEngineName = _userSettingsProvider.UserSettings.SelectedSearchEngine;
             var searchEngine = _searchEnginesProvider.GetSearchEngineByName(searchEngineName);
-            protocolHandler.TransformProtocol(searchEngine);
 
-            protocolHandler.StartProtocol();
+            if (searchEngine is not null)
+            {
+                protocolHandler.TransformProtocol(searchEngine);
+                protocolHandler.StartProtocol();
+            }
         }
     }
 }

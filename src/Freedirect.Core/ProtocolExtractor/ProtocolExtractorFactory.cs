@@ -4,7 +4,7 @@ namespace Freedirect.Core.ProtocolExtractor
 {
     internal class ProtocolExtractorFactory
     {
-        internal IProtocolExtractor CreateCorrespondingProtocolExtractor(Uri uri)
+        internal IProtocolExtractor? CreateCorrespondingProtocolExtractor(Uri uri)
         {
             return uri.Scheme switch
             {

@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Application", "F
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "Freedirect.Packaging", "Freedirect.Packaging\Freedirect.Packaging.wapproj", "{81B790C6-16E9-4671-90F4-C512B7D1CD49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "..\build\_build.csproj", "{1B28DA6C-6CE2-4638-A7AB-0A019CD40AA0}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Freedirect.Tests", "Freedirect.Tests\Freedirect.Tests.csproj", "{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_build", "..\build\_build.csproj", "{63165189-EF88-4EF3-9B07-FFB44E72EE3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{059C6E94-24A7-4F4F-95CD-4EFFE4B02564}"
 	ProjectSection(SolutionItems) = preProject
@@ -54,13 +54,13 @@ Global
 		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.ActiveCfg = Release|x64
 		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.Build.0 = Release|x64
 		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x64.Deploy.0 = Release|x64
-		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.ActiveCfg = Release|x64
-		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Build.0 = Release|x64
-		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Deploy.0 = Release|x64
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.ActiveCfg = Release|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Build.0 = Release|x86
+		{81B790C6-16E9-4671-90F4-C512B7D1CD49}.Release|x86.Deploy.0 = Release|x86
 		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x64.ActiveCfg = Debug|x64
 		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x64.Build.0 = Debug|x64
-		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.ActiveCfg = Debug|x64
-		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.Build.0 = Debug|x64
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.ActiveCfg = Debug|x86
+		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Debug|x86.Build.0 = Debug|x86
 		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x64.ActiveCfg = Release|x64
 		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x64.Build.0 = Release|x64
 		{A06732C8-73AB-4167-BB5A-10D5BDB41BD4}.Release|x86.ActiveCfg = Release|x86
