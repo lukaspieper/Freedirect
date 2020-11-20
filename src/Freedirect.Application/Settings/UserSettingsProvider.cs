@@ -19,7 +19,7 @@ namespace Freedirect.Application.Settings
             if (File.Exists(_settingsFilePath))
             {
                 var json = File.ReadAllText(_settingsFilePath);
-                UserSettings = JsonSerializer.Deserialize<UserSettings>(json);
+                UserSettings = JsonSerializer.Deserialize<UserSettings>(json) ?? new UserSettings();
             }
         }
 

@@ -23,7 +23,7 @@ namespace Freedirect.Application
             }
         }
 
-        private static Uri GetUriFromArgs(IReadOnlyList<string> args)
+        private static Uri? GetUriFromArgs(IReadOnlyList<string> args)
         {
             try
             {

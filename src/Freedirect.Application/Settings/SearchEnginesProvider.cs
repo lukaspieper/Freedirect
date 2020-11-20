@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -12,19 +13,19 @@ namespace Freedirect.Application.Settings
         internal SearchEnginesProvider()
         {
             var jsonFilePath = GetSearchEnginesJsonFilePath();
-            var json = File.ReadAllText(jsonFilePath);
+            var json = File.ReadAllText(jsonFilePath ?? throw new InvalidOperationException());
 
-            SearchEngines = JsonSerializer.Deserialize<List<SearchEngine>>(json);
+            SearchEngines = JsonSerializer.Deserialize<List<SearchEngine>>(json) ?? new List<SearchEngine>();
         }
 
         public List<SearchEngine> SearchEngines { get; }
 
-        public SearchEngine GetSearchEngineByName(string searchEngineName)
+        public SearchEngine? GetSearchEngineByName(string searchEngineName)
         {
-            return SearchEngines.FirstOrDefault(searchEngine => searchEngine.Name == searchEngineName && searchEngine.Address != null);
+            return SearchEngines.FirstOrDefault(searchEngine => searchEngine.Name == searchEngineName);
         }
 
-        private string GetSearchEnginesJsonFilePath()
+        private string? GetSearchEnginesJsonFilePath()
         {
             var executableFilePath = Assembly.GetExecutingAssembly().Location;
             var executableFile = new FileInfo(executableFilePath);

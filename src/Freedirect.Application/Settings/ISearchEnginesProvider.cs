@@ -7,6 +7,6 @@ namespace Freedirect.Application.Settings
     {
         List<SearchEngine> SearchEngines { get; }
 
-        SearchEngine GetSearchEngineByName(string searchEngineName);
+        SearchEngine? GetSearchEngineByName(string searchEngineName);
     }
 }
