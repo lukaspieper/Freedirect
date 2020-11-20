@@ -12,7 +12,7 @@ prefered one.
 
 I originally created this tool in 2018. Due to the idea to make the code open source, I have rewritten and refactored large parts. The following technologies and techniques are used in the current state:
 
-- WPF (.net Core)
+- WPF (.NET 5 with [nullable reference types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references) enabled)
 - MVVM ([Prism](https://github.com/prismlibrary))
 - Unit Tests ([xUnit](https://github.com/xunit))
-- [My personal build system](https://github.com/lukaspieper/dotnet-build-system)
+- [My personal build system with static code analysis and test coverage](https://github.com/lukaspieper/dotnet-build-system)
