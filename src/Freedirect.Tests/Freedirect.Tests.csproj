@@ -3,7 +3,6 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0-windows</TargetFramework>
 		<IsPackable>false</IsPackable>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Platforms>x86;x64</Platforms>
 	</PropertyGroup>
 
@@ -12,11 +11,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
 		<PackageReference Include="NSubstitute" Version="4.2.2" />
 		<PackageReference Include="NSubstitute.Analyzers.CSharp" Version="1.0.14" />
 		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
