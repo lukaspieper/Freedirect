@@ -1,0 +1,5 @@
+{
+    "CodeMetricsUserConfig": {
+        "MaintainabilityIndexMinimum": 40
+    }
+}
