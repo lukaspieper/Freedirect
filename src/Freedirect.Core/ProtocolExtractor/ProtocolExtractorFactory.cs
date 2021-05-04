@@ -9,7 +9,7 @@ namespace Freedirect.Core.ProtocolExtractor
             return uri.Scheme switch
             {
                 "microsoft-edge" => new EdgeProtocolExtractor(uri),
-                _ => null
+                _ => null,
             };
         }
     }
